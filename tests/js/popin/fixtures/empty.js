@@ -1,1 +1,0 @@
-var emptyjs = 1;

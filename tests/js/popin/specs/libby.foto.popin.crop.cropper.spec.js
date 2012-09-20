@@ -11,7 +11,6 @@ describe('libby foto popin crop cropper', function() {
 
     describe('plugin instance creation', function() {
         beforeEach(function() {
-            spyOn($, 'Jcrop').andCallThrough();
             this.container.fotoPopinCropCropper({container: this.container});
             this.cropper = this.container.data('fotoPopinCropCropper');
         });
@@ -150,25 +149,6 @@ describe('libby foto popin crop cropper', function() {
                             });
                         });
 
-                        xdescribe('changing the size to the same width and height', function() {
-                            beforeEach(function() {
-                                // o callback no settimeout sera executado instantaneamente
-                                spyOn(window, 'setTimeout').andCallFake(function(fn) {
-                                    fn.apply(null, [].slice.call(arguments, 2));
-                                    return +new Date;
-                                });
-
-                                this.fotoPopinCropChanged = jasmine.createSpy();
-                                this.container.unbind("fotoPopinCropChanged").bind("fotoPopinCropChanged", this.fotoPopinCropChanged);
-                                this.onChange = $.Jcrop.mostRecentCall.args[1].onChange;
-                                this.onChange.call(this.cropper.jCrop, {x: 1, y: 2, x2: 3, y2: 4});
-                                this.onChange.call(this.cropper.jCrop, {x: 1, y: 2, x2: 3, y2: 4});
-                            });
-
-                            it('should not call the fotoPopinCropChanged again', function() {
-                                expect(this.fotoPopinCropChanged).not.toHaveBeenCalled();
-                            });
-                        });
                     });
 
                     describe('should have activated jCrop', function() {
