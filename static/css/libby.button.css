@@ -1,0 +1,44 @@
+.libby-button {
+    cursor: pointer;
+    border: 0;
+    color: #2c7be5;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    background: transparent;
+    padding: 5px 9px;
+
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+}
+.libby-button.default {
+    font-size: 14px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f0f0f0 #f0f0f0 #c2c2c2 #f0f0f0;
+    box-shadow: 0 2px 3px -2px #c2c2c2;
+    background: -webkit-linear-gradient(top, #fefefe 0%, #f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+    background: -moz-linear-gradient(top, #fefefe 0%, #f5f5f5 100%); /* FF3.6+ */
+    background: -ms-linear-gradient(top, #fefefe 0%, #f5f5f5 100%); /* IE10+ */
+    background: linear-gradient(top, #fefefe 0%, #f5f5f5 100%); /* W3C */
+}
+.libby-button.highlighted {
+    color: #fff;
+    box-shadow: 0 2px 0 -1px #c6c6c6;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(top, #338CF2 0%,#1E53AF 100%); /* Chrome10+,Safari5.1+ */
+    background: -moz-linear-gradient(top, #338CF2 0%, #1E53AF 100%); /* FF3.6+ */
+    background: -ms-linear-gradient(top, #338CF2 0%,#1E53AF 100%); /* IE10+ */
+    background: linear-gradient(top, #338CF2 0%,#1E53AF 100%); /* W3C */
+}
+.libby-button:disabled, .libby-button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+/* para quando o botao funciona como checkbox */
+.libby-button.active {
+    box-shadow: inset 0 0 5px #aaa;
+    border-color: #aaa;
+}

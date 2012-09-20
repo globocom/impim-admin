@@ -1,0 +1,132 @@
+.libby-fotoPopinSearchFilters-container{
+    font-size: 11px;
+}
+.libby-fotoPopinSearchFilters-container .libby-fotoPopinSearchFilters-filterSearch input[type="text"]{
+    background: #fff url("../img/sprite1.png") 8px 6px no-repeat;
+    height: 16px;
+    padding: 7px 7px 7px 30px;
+    width: 304px;
+    font-size: 12px;
+}
+.libby-fotoPopinSearchFilters-container ul{
+    list-style: none;
+}
+.libby-fotoPopinSearchFilters-container fieldset{
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+.libby-fotoPopinSearchFilters-container legend{
+    display: none;
+}
+.libby-fotoPopinSearchFilters-container fieldset > ul > li{
+    float: left;
+    padding-left: 10px;
+}
+.libby-fotoPopinSearchFilters-container fieldset > ul > li:first-child {
+    padding-left: 0;
+}
+.libby-fotoPopinSearchFilters-container fieldset > ul > li > button{
+    margin-top: 1px;
+}
+.libby-fotoPopinSearchFilters-container button{
+    font-size: 14px;
+}
+.libby-fotoPopinSearchFilters-filtersDate{
+    width: 117px;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    padding-right: 10px;
+    -webkit-transition: width 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}
+.libby-fotoPopinSearchFilters-filtersDate.active{
+    width: 448px;
+}
+.libby-fotoPopinSearchFilters-filtersDate > button{
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    z-index: 2;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}
+.libby-fotoPopinSearchFilters-filtersDate.active > button{
+    opacity: 0;
+}
+.libby-fotoPopinSearchFilters-filtersDate > ul{
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #D5D5D5;
+    background: #F3F3F3;
+    height: 30px;
+
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}
+.libby-fotoPopinSearchFilters-filtersDate.active > ul{
+    opacity: 1;
+    z-index: 99999;
+}
+.libby-fotoPopinSearchFilters-filtersDate ul{
+    overflow: hidden;
+}
+.libby-fotoPopinSearchFilters-filtersDate li{
+    float: left;
+    margin-left: 6px;
+    padding: 3px;
+}
+.libby-fotoPopinSearchFilters-filtersDate input[type="text"]{
+    width: 60px;
+    height: 12px;
+    padding: 5px 3px;
+}
+.libby-fotoPopinSearchFilters-filtersDate .libby-fotoPopinSearchFilters-filterDateType{
+    padding-top: 8px;
+}
+.libby-fotoPopinSearchFilters-filtersDate li:nth-child(1) label,
+.libby-fotoPopinSearchFilters-filtersDate li:nth-child(2) label{
+    margin-right: 5px;
+}
+.libby-fotoPopinSearchFilters-filterDateType input[type="radio"]{
+    vertical-align: middle;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+.libby-fotoPopinSearchFilters-filterDateType label:first-of-type {
+    margin-right: 9px;
+}
+.libby-fotoPopinSearchFilters-filterDateType label{
+    vertical-align: text-top;
+    padding-left: 3px;
+}
+.libby-fotoPopinSearchFilters-filtersDate .libby-fotoPopinSearchFilters-closeFilterDate{
+    border-left: 1px solid #D5D5D5;
+    padding: 0;
+    line-height: 24px;
+}
+.libby-fotoPopinSearchFilters-filtersDate .libby-fotoPopinSearchFilters-closeFilterDate button{
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    border: 0;
+    background: none;
+    width: 28px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.libby-fotoPopinSearchFilters-submitSearch{
+    border-left: 1px solid #d5d5d5;
+}

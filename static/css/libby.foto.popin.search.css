@@ -1,0 +1,13 @@
+.libby-fotoPopinSearch-filtersContainer{
+    margin: 20px 0 10px 0;
+}
+.libby-fotoPopinSearch-moreInfoContainer{
+    margin-bottom: 10px;
+}
+.libby-fotoPopinSearch-thumbnailsContainer{
+    height: 360px;
+    overflow: auto;
+}
+.libby-fotoPopinSearch-thumbnailsContainer.no-search {
+    height: 450px;
+}

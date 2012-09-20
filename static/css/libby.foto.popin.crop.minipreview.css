@@ -1,0 +1,34 @@
+.libby-fotoPopinCropMiniPreview-image {
+    width: 260px;
+}
+
+.libby-fotoPopinCropMiniPreview-container {
+    width: 260px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.libby-fotoPopinCropMiniPreview-container > h4 {
+    color: #666;
+    font-weight: normal;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.libby-fotoPopinCropMiniPreview-container > .libby-fotoPopinCropMiniPreview-image {
+    height: 150px;
+}
+
+.libby-fotoPopinCropMiniPreview-container > .libby-fotoPopinCropMiniPreview-image canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+.libby-fotoPopinCropMiniPreview-loading {
+    background: url('../img/loading_transp.png') no-repeat;
+    width: 32px;
+    height: 32px;
+    top: 59px;
+    left: 114px;
+    position: absolute;
+}

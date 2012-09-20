@@ -1,0 +1,29 @@
+.libby-fotoPopinCropInfo-container {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 600px;
+    height: 40px;
+    padding: 0 10px;
+    background: #f7f7f7;
+    color: #666;
+}
+
+.libby-fotoPopinCropInfo-container-original {
+    float: left;
+}
+
+.libby-fotoPopinCropInfo-container-error {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.libby-fotoPopinCropInfo-container-final, .libby-fotoPopinCropInfo-container-error {
+    float: right;
+    text-align: right;
+}
+
+.libby-fotoPopinCropInfo-container strong {
+    color: #333;
+}

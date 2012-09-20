@@ -1,0 +1,12 @@
+.libby-fotoPopinSearchInfo-container {
+    height: 14px;
+    width: 100%;
+}
+.libby-fotoPopinSearchInfo-container button {
+    font-size: 12px;
+    font-weight: normal;
+    border-left: 1px solid #ccc;
+    margin-left: 10px;
+    padding: 0 10px;
+    letter-spacing: 0;
+}

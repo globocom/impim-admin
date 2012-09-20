@@ -1,0 +1,58 @@
+.libby-fotoPopinCrop-cropFlipContainer {
+    position: relative;
+    height: 383px;
+
+    -webkit-perspective: 2000;
+}
+
+.libby-fotoPopinCrop-cropFlipContainer .back,
+.libby-fotoPopinCrop-cropFlipContainer .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 620px;
+    height: 100%;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+}
+
+.libby-fotoPopinCrop-cropFlipContainer .front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+       -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+}
+.libby-fotoPopinCrop-cropFlipContainer.flip .front {
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+.libby-fotoPopinCrop-cropFlipContainer .back {
+    z-index: 1;
+    -webkit-transform: rotateY(-180deg);
+       -moz-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+.libby-fotoPopinCrop-cropFlipContainer.flip .back {
+    z-index: 3;
+    -webkit-transform: rotateY(0deg);
+       -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+}
+

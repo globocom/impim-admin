@@ -1,0 +1,67 @@
+.libby-fotoPopin-uploadtab ul{
+    list-style: none;
+}
+.libby-fotoPopin-uploadtab fieldset{
+    border: 0;
+}
+.libby-fotoPopin-uploadtab legend{
+    display: none;
+}
+.libby-fotoPopin-uploadtab h3{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+.libby-fotoPopin-uploadtab [type='text']{
+    height: 20px;
+    padding: 4px;
+    width: 570px;
+    float: left;
+    clear: left;
+}
+.libby-fotoPopin-uploadtab [type='file']{
+    float: left;
+    clear: left;
+    border: 1px solid #fff;
+}
+.libby-fotoPopin-uploadtab .libby-fotoPopinUpload-event-date{
+    width: 100px;
+}
+.libby-fotoPopin-uploadtab .error{
+    border: 1px solid #ff0000;
+    -webkit-transition: border 600ms linear;
+}
+.libby-fotoPopin-uploadtab form li {
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.libby-fotoPopin-uploadtab form li p {
+    color: #adadad;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 8px;
+    padding-bottom: 1px;
+    float: left;
+    clear: left;
+}
+.libby-fotoPopin-uploadtab label {
+    color: #666;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    float: left;
+}
+.libby-fotoPopin-uploadtab label.required {
+    position: relative;
+}
+.libby-fotoPopin-uploadtab label.required:after {
+    content: '';
+    width: 11px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -18px;
+    overflow: hidden;
+    background: url(../img/sprite1.png) 0 -44px no-repeat;
+}

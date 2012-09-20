@@ -1,0 +1,25 @@
+.libby-fotoPopinPreview-container h3{
+    margin-bottom: 20px;
+}
+
+.libby-fotoPopinPreview-image .container-image, .libby-fotoPopinPreview-image{
+    width: 915px;
+    height: 455px;
+}
+
+.libby-fotoPopinPreview-image{
+    overflow: auto;
+}
+
+.libby-fotoPopinPreview-active .apply-button{
+    float: right;
+}
+
+.libby-fotoPopinPreview-loading {
+    background: url('../img/loading_transp.png') no-repeat;
+    width: 32px;
+    height: 32px;
+    top: 211px;
+    left: 441px;
+    position: absolute;
+}

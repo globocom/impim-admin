@@ -1,0 +1,17 @@
+.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropCropper-container-croppable {
+    outline: solid 2px #ff0000;
+    outline-offset: -2px;
+}
+
+.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropInfo-container-error {
+    display: block;
+}
+
+.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropInfo-container-final {
+    display: none;
+}
+
+.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropMiniPreview-container {
+    display: none;
+}
+

@@ -1,0 +1,114 @@
+.libby-fotoPopinSearchThumbnails-container {
+    height: 100%;
+    width: 100%;
+    background: url('../img/loading_transp.png') center center no-repeat;
+}
+
+.libby-fotoPopinSearchThumbnails-container.loaded {
+    background-image: none;
+}
+
+.libby-fotoPopinSearchThumbnails-container-images > li {
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin: 4px 4px 8px 0;
+    cursor: pointer;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture > ul {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 118px;
+    height: 128px;
+    padding: 6px 8px 0 8px;
+    background: #000;
+    color: #FFF;
+    text-align: left;
+
+    -webkit-transition: opacity 0.2s linear;
+       -moz-transition: opacity 0.2s linear;
+            transition: opacity 0.2s linear;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture > ul:hover {
+    opacity: 0.8;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture > ul > li {
+    line-height: 15px;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture > ul > li:first-child {
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 15px;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture > ul > li:last-child {
+    padding-top: 15px;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container {
+    width: 134px;
+    height: 182px;
+    padding: 4px;
+}
+
+.libby-fotoPopinSearchThumbnails-first-image .libby-fotoPopinSearchThumbnails-image-container {
+    background: #f5f5f5;
+    border: 1px solid #c8c8c8;
+    padding: 3px;
+
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.libby-fotoPopinSearchThumbnails-first-image .libby-fotoPopinSearchThumbnails-current-image-options {
+    font-size: 11px;
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+}
+
+.libby-fotoPopinSearchThumbnails-first-image .libby-fotoPopinSearchThumbnails-current-image-options span {
+    opacity: 0.5;
+    padding-right: 8px;
+}
+
+
+.libby-fotoPopinSearchThumbnails-image.selected .libby-fotoPopinSearchThumbnails-image-container {
+    background: #E0F7FF;
+    border: 1px solid #6F9DF8;
+    padding: 3px;
+
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture {
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 134px;
+    height: 134px;
+    background: #DFDFDF url('../img/loading_transp.png') center center no-repeat;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture.loaded {
+    background-image: none;
+}
+
+.libby-fotoPopinSearchThumbnails-image-container-picture img {
+    display: block;
+    margin: 0 auto;
+}
+
+.libby-fotoPopinSearchThumbnails-image-title {
+    display: block;
+    padding-top: 8px;
+}
+
