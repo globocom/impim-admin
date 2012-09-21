@@ -10,7 +10,5 @@ help:
 	@echo '    ci ................................. executa CI'
 
 ci:
-	rvm info
 	bundle
-	rake jasmine:ci
-    
+	xvfb-run rake jasmine:ci
