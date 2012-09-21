@@ -12,5 +12,5 @@ help:
 ci:
 	bundle
 	xvfb-run rake jasmine:ci
-	git pull
+	git pull origin master
 	git push git@ngit.globoi.com:images-project/images-admin.git master
