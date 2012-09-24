@@ -1,17 +1,17 @@
-.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropCropper-container-croppable {
+.images-fotoPopinCrop-container.invalid-image .images-fotoPopinCropCropper-container-croppable {
     outline: solid 2px #ff0000;
     outline-offset: -2px;
 }
 
-.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropInfo-container-error {
+.images-fotoPopinCrop-container.invalid-image .images-fotoPopinCropInfo-container-error {
     display: block;
 }
 
-.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropInfo-container-final {
+.images-fotoPopinCrop-container.invalid-image .images-fotoPopinCropInfo-container-final {
     display: none;
 }
 
-.libby-fotoPopinCrop-container.invalid-image .libby-fotoPopinCropMiniPreview-container {
+.images-fotoPopinCrop-container.invalid-image .images-fotoPopinCropMiniPreview-container {
     display: none;
 }
 

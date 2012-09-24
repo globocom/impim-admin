@@ -1,12 +1,12 @@
-.libby-fotoPopinCrop-cropFlipContainer {
+.images-fotoPopinCrop-cropFlipContainer {
     position: relative;
     height: 383px;
 
     -webkit-perspective: 2000;
 }
 
-.libby-fotoPopinCrop-cropFlipContainer .back,
-.libby-fotoPopinCrop-cropFlipContainer .front {
+.images-fotoPopinCrop-cropFlipContainer .back,
+.images-fotoPopinCrop-cropFlipContainer .front {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,28 +27,28 @@
             transition: all .3s ease-in-out;
 }
 
-.libby-fotoPopinCrop-cropFlipContainer .front {
+.images-fotoPopinCrop-cropFlipContainer .front {
     z-index: 2;
     -webkit-transform: rotateY(0deg);
        -moz-transform: rotateY(0deg);
         -ms-transform: rotateY(0deg);
             transform: rotateY(0deg);
 }
-.libby-fotoPopinCrop-cropFlipContainer.flip .front {
+.images-fotoPopinCrop-cropFlipContainer.flip .front {
     -webkit-transform: rotateY(180deg);
        -moz-transform: rotateY(180deg);
         -ms-transform: rotateY(180deg);
             transform: rotateY(180deg);
 }
 
-.libby-fotoPopinCrop-cropFlipContainer .back {
+.images-fotoPopinCrop-cropFlipContainer .back {
     z-index: 1;
     -webkit-transform: rotateY(-180deg);
        -moz-transform: rotateY(-180deg);
         -ms-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
 }
-.libby-fotoPopinCrop-cropFlipContainer.flip .back {
+.images-fotoPopinCrop-cropFlipContainer.flip .back {
     z-index: 3;
     -webkit-transform: rotateY(0deg);
        -moz-transform: rotateY(0deg);

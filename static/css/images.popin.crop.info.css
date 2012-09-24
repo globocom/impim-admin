@@ -1,4 +1,4 @@
-.libby-fotoPopinCropInfo-container {
+.images-fotoPopinCropInfo-container {
     display: table-cell;
     vertical-align: middle;
     overflow: hidden;
@@ -9,21 +9,21 @@
     color: #666;
 }
 
-.libby-fotoPopinCropInfo-container-original {
+.images-fotoPopinCropInfo-container-original {
     float: left;
 }
 
-.libby-fotoPopinCropInfo-container-error {
+.images-fotoPopinCropInfo-container-error {
     color: red;
     font-weight: bold;
     display: none;
 }
 
-.libby-fotoPopinCropInfo-container-final, .libby-fotoPopinCropInfo-container-error {
+.images-fotoPopinCropInfo-container-final, .images-fotoPopinCropInfo-container-error {
     float: right;
     text-align: right;
 }
 
-.libby-fotoPopinCropInfo-container strong {
+.images-fotoPopinCropInfo-container strong {
     color: #333;
 }

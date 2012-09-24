@@ -1,29 +1,29 @@
-.libby-fotoPopinCropSizes-container {
+.images-fotoPopinCropSizes-container {
     border: 1px solid #DDD;
     background: #f7f7f7;
     overflow: hidden;
     border-radius: 4px;
 }
-.libby-fotoPopinCropSizes-container > div {
+.images-fotoPopinCropSizes-container > div {
     float: left;
     width: 128px;
     height: 45px;
     line-height: 45px;
     text-align: center;
 }
-.libby-fotoPopinCropSizes-container > div > label {
+.images-fotoPopinCropSizes-container > div > label {
     padding-right: 3px;
     color: #959595;
     text-transform: uppercase;
     font-size: 10px;
 }
-.libby-fotoPopinCropSizes-container > div > input[type="text"] {
+.images-fotoPopinCropSizes-container > div > input[type="text"] {
     width: 60px;
     height: 30px;
     font-size: 18px;
     vertical-align: middle;
 }
-.libby-fotoPopinCropSizes-container-width {
+.images-fotoPopinCropSizes-container-width {
     border-right: 1px solid #DDD;
 }
 

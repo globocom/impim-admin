@@ -1,13 +1,13 @@
-.libby-fotoPopinSearch-filtersContainer{
+.images-fotoPopinSearch-filtersContainer{
     margin: 20px 0 10px 0;
 }
-.libby-fotoPopinSearch-moreInfoContainer{
+.images-fotoPopinSearch-moreInfoContainer{
     margin-bottom: 10px;
 }
-.libby-fotoPopinSearch-thumbnailsContainer{
+.images-fotoPopinSearch-thumbnailsContainer{
     height: 360px;
     overflow: auto;
 }
-.libby-fotoPopinSearch-thumbnailsContainer.no-search {
+.images-fotoPopinSearch-thumbnailsContainer.no-search {
     height: 450px;
 }
