@@ -17,22 +17,22 @@ src_files:
     - static/js/libby.objectRemap.js
     - static/js/jquery.form.js
     - static/js/jquery.Jcrop.js
-    - static/js/libby.foto.popin.search.filters.js
-    - static/js/libby.foto.popin.search.thumbnails.js
-    - static/js/libby.foto.popin.search.info.js
-    - static/js/libby.foto.popin.search.pager.js
-    - static/js/libby.foto.popin.crop.flip.js
-    - static/js/libby.foto.popin.crop.cropper.js
-    - static/js/libby.foto.popin.crop.sizeselect.js
-    - static/js/libby.foto.popin.crop.info.js
-    - static/js/libby.foto.popin.crop.minipreview.js
-    - static/js/libby.foto.popin.crop.options.js
-    - static/js/libby.foto.popin.crop.sizes.js
-    - static/js/libby.foto.popin.upload.js
-    - static/js/libby.foto.popin.preview.js
-    - static/js/libby.foto.popin.search.js
-    - static/js/libby.foto.popin.crop.js
-    - static/js/libby.foto.popin.js
+    - static/js/images.popin.search.filters.js
+    - static/js/images.popin.search.thumbnails.js
+    - static/js/images.popin.search.info.js
+    - static/js/images.popin.search.pager.js
+    - static/js/images.popin.crop.flip.js
+    - static/js/images.popin.crop.cropper.js
+    - static/js/images.popin.crop.sizeselect.js
+    - static/js/images.popin.crop.info.js
+    - static/js/images.popin.crop.minipreview.js
+    - static/js/images.popin.crop.options.js
+    - static/js/images.popin.crop.sizes.js
+    - static/js/images.popin.upload.js
+    - static/js/images.popin.preview.js
+    - static/js/images.popin.search.js
+    - static/js/images.popin.crop.js
+    - static/js/images.popin.js
 
 # stylesheets
 #
