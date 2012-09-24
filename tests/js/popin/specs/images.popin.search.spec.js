@@ -1,4 +1,4 @@
-describe('libby foto popin search', function() {
+describe('images foto popin search', function() {
 
     beforeEach(function(){
         this.container = $('<div></div>');
@@ -17,19 +17,19 @@ describe('libby foto popin search', function() {
         });
 
         it('contains a div for all the elements', function() {
-            expect(this.container).toContain('div.libby-fotoPopinSearch-container');
+            expect(this.container).toContain('div.images-fotoPopinSearch-container');
         });
 
         it('contains a div for search filters plugin', function() {
-            expect(this.container).toContain('div.libby-fotoPopinSearch-container > div.libby-fotoPopinSearch-filtersContainer');
+            expect(this.container).toContain('div.images-fotoPopinSearch-container > div.images-fotoPopinSearch-filtersContainer');
         });
 
         it('contains a p for search info plugin', function() {
-            expect(this.container).toContain('div.libby-fotoPopinSearch-container > div.libby-fotoPopinSearch-moreInfoContainer');
+            expect(this.container).toContain('div.images-fotoPopinSearch-container > div.images-fotoPopinSearch-moreInfoContainer');
         });
 
         it('contains a div as container for thumbnails plugin', function() {
-            expect(this.container).toContain('div.libby-fotoPopinSearch-container > div.libby-fotoPopinSearch-thumbnailsContainer');
+            expect(this.container).toContain('div.images-fotoPopinSearch-container > div.images-fotoPopinSearch-thumbnailsContainer');
         });
 
         it('has an H3 with text Buscar foto', function() {

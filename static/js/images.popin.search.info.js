@@ -5,7 +5,7 @@
     * To activate: $(container).fotoPopinSearchInfo('activate');
     * To deactivate: $(container).fotoPopinSearchInfo('deactivate');
     */
-    $.widget('libby.fotoPopinSearchInfo', $.libby.widgetBase, {
+    $.widget('images.fotoPopinSearchInfo', $.libby.widgetBase, {
 
         options: {
             container: null

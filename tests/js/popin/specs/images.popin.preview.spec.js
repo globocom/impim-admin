@@ -1,4 +1,4 @@
-describe('libby foto popin preview', function() {
+describe('images foto popin preview', function() {
 
     beforeEach(function(){
         this.container = $('<div/>');
@@ -28,7 +28,7 @@ describe('libby foto popin preview', function() {
         });
 
         it('contains a div for all the elements', function() {
-            expect(this.container).toContain('div.libby-fotoPopinPreview-container');
+            expect(this.container).toContain('div.images-fotoPopinPreview-container');
         });
 
         it('contains an h3', function() {

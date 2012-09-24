@@ -1,4 +1,4 @@
-describe('libby foto popin search thumbnails', function() {
+describe('images foto popin search thumbnails', function() {
 
     beforeEach(function(){
         this.container = $('<div>');
@@ -15,7 +15,7 @@ describe('libby foto popin search thumbnails', function() {
         });
 
         it('creates a container div', function() {
-            expect(this.container).toContain('div.libby-fotoPopinSearchThumbnails-container');
+            expect(this.container).toContain('div.images-fotoPopinSearchThumbnails-container');
         });
 
         it('has a container element', function() {
@@ -23,7 +23,7 @@ describe('libby foto popin search thumbnails', function() {
         });
 
         it('creates a images ul', function() {
-            expect(this.container).toContain('div.libby-fotoPopinSearchThumbnails-container > ul.libby-fotoPopinSearchThumbnails-container-images');
+            expect(this.container).toContain('div.images-fotoPopinSearchThumbnails-container > ul.images-fotoPopinSearchThumbnails-container-images');
         });
 
         it('has an imageList element', function() {
@@ -69,21 +69,21 @@ describe('libby foto popin search thumbnails', function() {
             });
 
             it('should have a container div in each li', function() {
-                expect(this.thumbs.find('li')).toContain('div.libby-fotoPopinSearchThumbnails-image-container');
+                expect(this.thumbs.find('li')).toContain('div.images-fotoPopinSearchThumbnails-image-container');
             });
 
             it('should have a picture div in the container', function() {
                 expect(this.thumbs)
-                    .toContain('div.libby-fotoPopinSearchThumbnails-image-container > div.libby-fotoPopinSearchThumbnails-image-container-picture');
+                    .toContain('div.images-fotoPopinSearchThumbnails-image-container > div.images-fotoPopinSearchThumbnails-image-container-picture');
             });
 
             it('should have an ul in the picture div', function() {
                 expect(this.thumbs)
-                    .toContain('div.libby-fotoPopinSearchThumbnails-image-container-picture > ul');
+                    .toContain('div.images-fotoPopinSearchThumbnails-image-container-picture > ul');
             });
 
             it('should have publish date and original size', function() {
-                var metadata = this.thumbs.find('div.libby-fotoPopinSearchThumbnails-image-container-picture > ul');
+                var metadata = this.thumbs.find('div.images-fotoPopinSearchThumbnails-image-container-picture > ul');
 
                 var li = $(metadata.find('li').get(0));
 
@@ -95,7 +95,7 @@ describe('libby foto popin search thumbnails', function() {
             });
 
             it('should have publish date and original size', function() {
-                var metadata = this.thumbs.find('div.libby-fotoPopinSearchThumbnails-image-container-picture > ul');
+                var metadata = this.thumbs.find('div.images-fotoPopinSearchThumbnails-image-container-picture > ul');
 
                 var li = $(metadata.find('li').get(1));
 
@@ -107,14 +107,14 @@ describe('libby foto popin search thumbnails', function() {
             });
 
             it('should have image with thumbnail src', function() {
-                var picture = this.thumbs.find('div.libby-fotoPopinSearchThumbnails-image-container-picture');
+                var picture = this.thumbs.find('div.images-fotoPopinSearchThumbnails-image-container-picture');
                 expect(picture).toContain('img');
                 expect(picture.find('img'))
                     .toHaveAttr('src', 'image_url.jpg');
             });
 
             it('should have a strong with title', function() {
-                var key = 'div.libby-fotoPopinSearchThumbnails-image-container > strong';
+                var key = 'div.images-fotoPopinSearchThumbnails-image-container > strong';
                 expect(this.thumbs).toContain(key);
                 expect(this.thumbs.find(key)).toHaveText('title');
             });

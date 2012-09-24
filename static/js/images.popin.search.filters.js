@@ -1,6 +1,6 @@
 (function($){
 
-    $.widget('libby.fotoPopinSearchFilters', $.libby.widgetBase, {
+    $.widget('images.fotoPopinSearchFilters', $.libby.widgetBase, {
         options: {
             container: null,
             hasSearch: true,

@@ -1,8 +1,8 @@
-describe('libby foto popin crop sizeselect', function() {
+describe('images foto popin crop sizeselect', function() {
 
     beforeEach(function() {
-        this.defaultOptions = $.libby.fotoPopinCropSizeSelect.prototype.options;
-        this.container = $('<div class="libby-fotoPopinCrop-cropSizeSelectContainer"></div>').appendTo('body');
+        this.defaultOptions = $.images.fotoPopinCropSizeSelect.prototype.options;
+        this.container = $('<div class="images-fotoPopinCrop-cropSizeSelectContainer"></div>').appendTo('body');
     });
     afterEach(function() {
         this.container.remove();

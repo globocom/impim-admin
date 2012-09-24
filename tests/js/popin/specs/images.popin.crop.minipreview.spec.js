@@ -1,4 +1,4 @@
-describe('libby foto popin crop mini-preview', function() {
+describe('images foto popin crop mini-preview', function() {
 
     beforeEach(function(){
         this.container = $('<div>');
@@ -33,7 +33,7 @@ describe('libby foto popin crop mini-preview', function() {
         });
 
         it("contains a div for all the elements", function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropMiniPreview-container');
+            expect(this.container).toContain('div.images-fotoPopinCropMiniPreview-container');
         });
 
         it("has a title", function() {
@@ -41,15 +41,15 @@ describe('libby foto popin crop mini-preview', function() {
         });
 
         it("contains a div for all the elements", function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropMiniPreview-container');
+            expect(this.container).toContain('div.images-fotoPopinCropMiniPreview-container');
         });
 
         it("has a div for the canvas", function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropMiniPreview-image.container-image');
+            expect(this.container).toContain('div.images-fotoPopinCropMiniPreview-image.container-image');
         });
 
         it("has a div to show that there is content loading", function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropMiniPreview-loading');
+            expect(this.container).toContain('div.images-fotoPopinCropMiniPreview-loading');
         });
 
         describe("plugin behavior when it is filled with image data passed as event argument", function(){
@@ -61,7 +61,7 @@ describe('libby foto popin crop mini-preview', function() {
             });
 
             it('has an invisible loading image', function() {
-                expect(this.container).toContain('div.libby-fotoPopinCropMiniPreview-image.container-image:not(:visible)');
+                expect(this.container).toContain('div.images-fotoPopinCropMiniPreview-image.container-image:not(:visible)');
             });
             it('has a canvas with defined width', function() {
                 expect(this.container.find('canvas')).toHaveAttr('width', '200');

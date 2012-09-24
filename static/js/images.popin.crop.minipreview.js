@@ -3,7 +3,7 @@
     /*
     * To use: $(container).fotoPopinCropMiniPreview(options);
     */
-    $.widget('libby.fotoPopinCropMiniPreview', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCropMiniPreview', $.libby.widgetBase, {
 
         options: {
             container: null,

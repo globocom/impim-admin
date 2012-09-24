@@ -5,7 +5,7 @@
         27: 'esc'
     };
 
-    $.widget('libby.fotoPopin', $.libby.widgetBase, {
+    $.widget('images.fotoPopin', $.libby.widgetBase, {
         options: {
             recommendedSizes: null, // the possible sizes to be selected, ex: [{width: 10, height: 20}, ...]
             hasSearch: true,
@@ -313,7 +313,7 @@
             this.element[tabName](method, arg);
         },
         _deactivateTab: function(tabName){
-            this.element.removeClass('libby-'+ tabName +'-active');
+            this.element.removeClass('images-'+ tabName +'-active');
             this._callTabMethod(tabName, 'deactivate');
         },
         _activateTab: function(tabName){
@@ -321,7 +321,7 @@
                 this._deactivateTab(this.activeTabName);
             }
             this.activeTabName = tabName;
-            this.element.addClass('libby-'+ tabName +'-active');
+            this.element.addClass('images-'+ tabName +'-active');
             this._callTabMethod(tabName, 'activate');
         },
         _withModulesLoaded: function(callback){

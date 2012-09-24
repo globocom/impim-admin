@@ -1,6 +1,6 @@
 (function($){
 
-    $.widget('libby.fotoPopinCropFlip', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCropFlip', $.libby.widgetBase, {
         options: {
             container: null
         },

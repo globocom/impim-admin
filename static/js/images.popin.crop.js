@@ -5,7 +5,7 @@
     * To activate: $(container).fotoPopinCrop('activate');
     * To deactivate: $(container).fotoPopinCrop('deactivate');
     */
-    $.widget('libby.fotoPopinCrop', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCrop', $.libby.widgetBase, {
 
         options: {
             container: null,

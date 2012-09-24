@@ -1,7 +1,7 @@
-describe('libby foto popin', function() {
+describe('images foto popin', function() {
 
     beforeEach(function(){
-        this.fotoPopinOptions = $.libby.fotoPopin.prototype.options;
+        this.fotoPopinOptions = $.images.fotoPopin.prototype.options;
         this.element = $('<div>');
     });
 
@@ -54,63 +54,63 @@ describe('libby foto popin', function() {
                 expect(this.element).toContain('button.search-top-button');
             });
             it('should contain the tabs container DOM element', function(){
-                expect(this.element).toContain('div.libby-fotoPopin-tabs');
+                expect(this.element).toContain('div.images-fotoPopin-tabs');
             });
             it('should contain the footer DOM element', function(){
-                expect(this.element).toContain('div.libby-fotoPopin-footer');
+                expect(this.element).toContain('div.images-fotoPopin-footer');
             });
             it('should contain the back button DOM element', function(){
-                expect(this.element).toContain('div.libby-fotoPopin-footer .back-button');
+                expect(this.element).toContain('div.images-fotoPopin-footer .back-button');
             });
             it('should contain the preview button DOM element', function(){
-                expect(this.element).toContain('div.libby-fotoPopin-footer .preview-button');
+                expect(this.element).toContain('div.images-fotoPopin-footer .preview-button');
             });
             it('should contain the apply button DOM element', function(){
-                expect(this.element).toContain('div.libby-fotoPopin-footer .apply-button');
+                expect(this.element).toContain('div.images-fotoPopin-footer .apply-button');
             });
             it('should contain the cancel DOM element', function(){
-                expect(this.element).toContain('div.libby-fotoPopin-footer .cancel-button');
+                expect(this.element).toContain('div.images-fotoPopin-footer .cancel-button');
             });
             it('should contain the register button DOM element', function(){
-                expect(this.element).toContain('div.libby-fotoPopin-footer .register-button');
+                expect(this.element).toContain('div.images-fotoPopin-footer .register-button');
             });
         });
 
         describe('the open method', function(){
             beforeEach(function(){
-                spyOn($.libby.fotoPopin.prototype, '_activateTab').andCallThrough();
+                spyOn($.images.fotoPopin.prototype, '_activateTab').andCallThrough();
                 spyOn($.fn, 'fotoPopinSearch').andCallThrough();
                 spyOn($.fn, 'fotoPopinUpload').andCallThrough();
                 spyOn($.fn, 'fotoPopinCrop').andCallThrough();
                 spyOn($.fn, 'fotoPopinPreview').andCallThrough();
-                spyOn($.libby.fotoPopinSearch.prototype, 'activate');
+                spyOn($.images.fotoPopinSearch.prototype, 'activate');
                 this.element.fotoPopin('open');
                 this.widget = this.element.data('fotoPopin');
             });
 
             it('should load and initialize the search module', function(){
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
                     expect($.fn.fotoPopinSearch).toHaveBeenCalled();
                 });
             });
             it('should load and initialize the upload module', function(){
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
                     expect($.fn.fotoPopinUpload).toHaveBeenCalled();
                 });
             });
             it('should load and initialize the crop module', function(){
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
                     expect($.fn.fotoPopinCrop).toHaveBeenCalled();
                });
             });
             it('should load and initialize the preview module', function(){
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
                     expect($.fn.fotoPopinPreview).toHaveBeenCalled();
                 });
             });
             it('should activate the default tab, which is the Search', function(){
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
-                    expect($.libby.fotoPopinSearch.prototype.activate).toHaveBeenCalled();
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                    expect($.images.fotoPopinSearch.prototype.activate).toHaveBeenCalled();
                 });
             });
         });
@@ -121,10 +121,10 @@ describe('libby foto popin', function() {
                 spyOn($.fn, 'fotoPopinCrop');
                 spyOn($.fn, 'fotoPopinUpload');
                 spyOn($.fn, 'fotoPopinPreview');
-                spyOn($.libby.fotoPopinSearch.prototype, 'activate');
-                spyOn($.libby.fotoPopinCrop.prototype, 'activate');
-                spyOn($.libby.fotoPopinUpload.prototype, 'activate');
-                spyOn($.libby.fotoPopinPreview.prototype, 'activate');
+                spyOn($.images.fotoPopinSearch.prototype, 'activate');
+                spyOn($.images.fotoPopinCrop.prototype, 'activate');
+                spyOn($.images.fotoPopinUpload.prototype, 'activate');
+                spyOn($.images.fotoPopinPreview.prototype, 'activate');
             });
 
             it('should pass the right options to the fotoPopinSearch widget', function(){
@@ -158,59 +158,59 @@ describe('libby foto popin', function() {
 
         describe('the open method should activate the corresponding tab', function(){
             beforeEach(function(){
-                spyOn($.libby.fotoPopin.prototype, '_activateTab').andCallThrough();
+                spyOn($.images.fotoPopin.prototype, '_activateTab').andCallThrough();
                 spyOn($.fn, 'fotoPopinSearch').andCallThrough();
                 spyOn($.fn, 'fotoPopinUpload').andCallThrough();
                 spyOn($.fn, 'fotoPopinCrop').andCallThrough();
                 spyOn($.fn, 'fotoPopinPreview').andCallThrough();
-                spyOn($.libby.fotoPopinSearch.prototype, 'activate');
-                spyOn($.libby.fotoPopinCrop.prototype, 'activate');
-                spyOn($.libby.fotoPopinUpload.prototype, 'activate');
-                spyOn($.libby.fotoPopinPreview.prototype, 'activate');
+                spyOn($.images.fotoPopinSearch.prototype, 'activate');
+                spyOn($.images.fotoPopinCrop.prototype, 'activate');
+                spyOn($.images.fotoPopinUpload.prototype, 'activate');
+                spyOn($.images.fotoPopinPreview.prototype, 'activate');
                 this.widget = this.element.data('fotoPopin');
             });
 
             it('should activate the search module', function(){
                 this.element.fotoPopin('open', 'fotoPopinSearch');
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
-                    expect($.libby.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinSearch');
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                    expect($.images.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinSearch');
                     expect(this.widget.activeTabName).toEqual('fotoPopinSearch');
-                    expect(this.element).toHaveClass('libby-fotoPopinSearch-active');
+                    expect(this.element).toHaveClass('images-fotoPopinSearch-active');
                 });
             });
             it('should activate the upload module', function(){
                 this.element.fotoPopin('open', 'fotoPopinUpload');
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
-                    expect($.libby.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinUpload');
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                    expect($.images.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinUpload');
                     expect(this.widget.activeTabName).toEqual('fotoPopinUpload');
-                    expect(this.element).toHaveClass('libby-fotoPopinUpload-active');
+                    expect(this.element).toHaveClass('images-fotoPopinUpload-active');
                 });
             });
             it('should activate the crop module', function(){
                 this.element.fotoPopin('open', 'fotoPopinCrop');
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
-                    expect($.libby.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinCrop');
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                    expect($.images.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinCrop');
                     expect(this.widget.activeTabName).toEqual('fotoPopinCrop');
-                    expect(this.element).toHaveClass('libby-fotoPopinCrop-active');
+                    expect(this.element).toHaveClass('images-fotoPopinCrop-active');
                 });
             });
             it('should activate the preview module', function(){
                 this.element.fotoPopin('open', 'fotoPopinPreview');
-                waitsForSpy($.libby.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
-                    expect($.libby.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinPreview');
+                waitsForSpy($.images.fotoPopin.prototype._activateTab).toBeCalledAndThen(function(){
+                    expect($.images.fotoPopin.prototype._activateTab).toHaveBeenCalledWith('fotoPopinPreview');
                     expect(this.widget.activeTabName).toEqual('fotoPopinPreview');
-                    expect(this.element).toHaveClass('libby-fotoPopinPreview-active');
+                    expect(this.element).toHaveClass('images-fotoPopinPreview-active');
                 });
             });
         });
 
         describe('navigation buttons', function(){
             beforeEach(function(){
-                spyOn($.libby.fotoPopin.prototype, '_activateTab').andCallThrough();
-                spyOn($.libby.fotoPopinSearch.prototype, 'activate');
-                spyOn($.libby.fotoPopinCrop.prototype, 'activate');
-                spyOn($.libby.fotoPopinUpload.prototype, 'activate');
-                spyOn($.libby.fotoPopinPreview.prototype, 'activate');
+                spyOn($.images.fotoPopin.prototype, '_activateTab').andCallThrough();
+                spyOn($.images.fotoPopinSearch.prototype, 'activate');
+                spyOn($.images.fotoPopinCrop.prototype, 'activate');
+                spyOn($.images.fotoPopinUpload.prototype, 'activate');
+                spyOn($.images.fotoPopinPreview.prototype, 'activate');
                 this.tabsContainer = this.widget.elements.tabsContainer;
             });
 
@@ -256,7 +256,7 @@ describe('libby foto popin', function() {
                 beforeEach(function(){
                     // como o jcrop soh inicializa no carregar de imagens, o deactivate dah erro
                     // pq tenta destruir ele, o spy eh apenas para nao executar isso e dar erro
-                    spyOn($.libby.fotoPopinCropCropper.prototype, 'deactivate');
+                    spyOn($.images.fotoPopinCropCropper.prototype, 'deactivate');
                     this.element.fotoPopin('open', 'fotoPopinCrop');
                 });
 

@@ -20,7 +20,7 @@
 
     }());
 
-    $.widget('libby.fotoPopinCropCropper', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCropCropper', $.libby.widgetBase, {
         options: {
             container: null,
             unsafeUrl: 'http://thumbor.globoi.com/unsafe'

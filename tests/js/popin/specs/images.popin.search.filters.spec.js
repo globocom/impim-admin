@@ -1,4 +1,4 @@
-describe('libby foto popin search filters', function() {
+describe('images foto popin search filters', function() {
 
     beforeEach(function(){
         this.container = $('<div/>');
@@ -51,7 +51,7 @@ describe('libby foto popin search filters', function() {
         });
 
         it('should have a container div', function() {
-            expect(this.container).toContain('div.libby-fotoPopinSearchFilters-container');
+            expect(this.container).toContain('div.images-fotoPopinSearchFilters-container');
         });
 
         it('contains a form element', function() {

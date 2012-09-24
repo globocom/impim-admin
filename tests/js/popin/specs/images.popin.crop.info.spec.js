@@ -1,4 +1,4 @@
-describe('libby foto popin crop info', function() {
+describe('images foto popin crop info', function() {
 
     beforeEach(function(){
         this.container = $('<div></div>');
@@ -16,15 +16,15 @@ describe('libby foto popin crop info', function() {
         });
 
         it('should have a container div', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropInfo-container');
+            expect(this.container).toContain('div.images-fotoPopinCropInfo-container');
         });
 
         it('should have an original div', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropInfo-container-original');
+            expect(this.container).toContain('div.images-fotoPopinCropInfo-container-original');
         });
 
         it('should have a final div', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropInfo-container-final');
+            expect(this.container).toContain('div.images-fotoPopinCropInfo-container-final');
         });
 
 

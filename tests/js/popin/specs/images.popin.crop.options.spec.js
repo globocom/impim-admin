@@ -1,7 +1,7 @@
-describe('libby foto popin crop options', function() {
+describe('images foto popin crop options', function() {
 
     beforeEach(function() {
-        this.defaultOptions = $.libby.fotoPopinCropOptions.prototype.options;
+        this.defaultOptions = $.images.fotoPopinCropOptions.prototype.options;
         this.container = $('<div>');
     });
 

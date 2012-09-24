@@ -4,7 +4,7 @@
     * To activate: $(container).fotoPopinUpload('activate');
     * To deactivate: $(container).fotoPopinUpload('deactivate');
     */
-    $.widget('libby.fotoPopinUpload', $.libby.widgetBase, {
+    $.widget('images.fotoPopinUpload', $.libby.widgetBase, {
         options: {
             container: null,
             uploadUrl: '/libby/aplicacoes/foto/upload/',

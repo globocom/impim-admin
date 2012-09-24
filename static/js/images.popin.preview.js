@@ -4,7 +4,7 @@
     * To activate: $(container).fotoPopinPreview('activate');
     * To deactivate: $(container).fotoPopinPreview('deactivate');
     */
-    $.widget('libby.fotoPopinPreview', $.libby.widgetBase, {
+    $.widget('images.fotoPopinPreview', $.libby.widgetBase, {
 
         options: {
             container: null,

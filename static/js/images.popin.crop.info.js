@@ -3,7 +3,7 @@
     /*
     * To use: $(container).fotoPopinCropInfo(options);
     */
-    $.widget('libby.fotoPopinCropInfo', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCropInfo', $.libby.widgetBase, {
         options: {
             container: null,
             invalidImageMessage: 'O tamanho selecionado é maior que o tamanho da foto original.',

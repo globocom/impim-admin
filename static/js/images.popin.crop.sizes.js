@@ -3,7 +3,7 @@
     /*
     * To use: $(container).fotoPopinCropSizes(options);
     */
-    $.widget('libby.fotoPopinCropSizes', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCropSizes', $.libby.widgetBase, {
         options: {
             container: null,
             recommendedSizes: null // the possible sizes to be selected, ex: [{width: 10, height: 20}, ...]

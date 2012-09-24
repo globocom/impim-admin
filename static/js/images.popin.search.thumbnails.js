@@ -5,7 +5,7 @@
     * To trigger event for currently selected image: $(container).fotoPopinSearchThumbnails('selectImage');
     * To get currently selected image: $(container).fotoPopinSearchThumbnails('selectedImage');
     */
-    $.widget('libby.fotoPopinSearchThumbnails', $.libby.widgetBase, {
+    $.widget('images.fotoPopinSearchThumbnails', $.libby.widgetBase, {
         options: {
             container: null
         },

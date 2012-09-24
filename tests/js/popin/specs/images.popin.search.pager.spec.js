@@ -1,4 +1,4 @@
-describe("libby foto popin pager", function(){
+describe("images foto popin pager", function(){
 
     beforeEach(function(){
         this.container = $('<div></div>');
@@ -10,7 +10,7 @@ describe("libby foto popin pager", function(){
     describe('plugin instance creation', function(){
 
         it("the paginator is not have to be visible", function(){
-            expect(this.container.find(".libby-fotoPopinSearchPager-container")).toHaveClass("off");
+            expect(this.container.find(".images-fotoPopinSearchPager-container")).toHaveClass("off");
         });
 
         it('contain a element <input>', function(){
@@ -18,15 +18,15 @@ describe("libby foto popin pager", function(){
         });
 
         it('contain an empty element <span>', function(){
-            expect(this.container.find('span.libby-fotoPopinSearchPager-totalPages')).toHaveText('');
+            expect(this.container.find('span.images-fotoPopinSearchPager-totalPages')).toHaveText('');
         });
 
         it('has class off in back button', function(){
-            expect(this.container.find('button.libby-fotoPopinSearchPager-backPage')).toHaveClass('off');
+            expect(this.container.find('button.images-fotoPopinSearchPager-backPage')).toHaveClass('off');
         });
 
         it('not has class off in next button', function(){
-            expect(this.container.find('button.libby-fotoPopinSearchPager-nextPage')).not.toHaveClass('off');
+            expect(this.container.find('button.images-fotoPopinSearchPager-nextPage')).not.toHaveClass('off');
         });
 
     });

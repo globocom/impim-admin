@@ -1,6 +1,6 @@
 (function($){
 
-    $.widget('libby.fotoPopinCropOptions', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCropOptions', $.libby.widgetBase, {
         options: {
             container: null,
             recommendedSizes: null // the possible sizes to be selected, ex: [{width: 10, height: 20}, ...]

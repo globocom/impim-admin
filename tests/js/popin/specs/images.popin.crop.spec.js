@@ -1,4 +1,4 @@
-describe('libby foto popin crop', function() {
+describe('images foto popin crop', function() {
 
     beforeEach(function(){
         this.container = $('<div></div>');
@@ -16,19 +16,19 @@ describe('libby foto popin crop', function() {
         });
 
         it('contains a div for all the elements', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-container');
+            expect(this.container).toContain('div.images-fotoPopinCrop-container');
         });
 
         it('contains a div for all crop selection plugins', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-container > div.libby-fotoPopinCrop-cropSelectionContainer');
+            expect(this.container).toContain('div.images-fotoPopinCrop-container > div.images-fotoPopinCrop-cropSelectionContainer');
         });
 
         it('contains a container div for the flip plugin', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-cropSelectionContainer > div.libby-fotoPopinCrop-cropFlipContainer');
+            expect(this.container).toContain('div.images-fotoPopinCrop-cropSelectionContainer > div.images-fotoPopinCrop-cropFlipContainer');
         });
 
         it('contains a div as container for cropper plugin', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-cropFlipContainer > div.libby-fotoPopinCrop-cropCropperContainer');
+            expect(this.container).toContain('div.images-fotoPopinCrop-cropFlipContainer > div.images-fotoPopinCrop-cropCropperContainer');
         });
 
         it('should have a reference for cropCropperContainer', function() {
@@ -37,7 +37,7 @@ describe('libby foto popin crop', function() {
         });
 
         it('contains a div as container for crop information plugin', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-cropSelectionContainer > div.libby-fotoPopinCrop-cropInfoContainer');
+            expect(this.container).toContain('div.images-fotoPopinCrop-cropSelectionContainer > div.images-fotoPopinCrop-cropInfoContainer');
         });
 
         it('should have a reference for cropInfoContainer', function() {
@@ -46,19 +46,19 @@ describe('libby foto popin crop', function() {
         });
 
         it('contains a div for right side to be some selection options', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-container > div.libby-fotoPopinCrop-cropColumnContainer');
+            expect(this.container).toContain('div.images-fotoPopinCrop-container > div.images-fotoPopinCrop-cropColumnContainer');
         });
 
         it('contains a H4 for title of formats', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-cropColumnContainer > h4');
+            expect(this.container).toContain('div.images-fotoPopinCrop-cropColumnContainer > h4');
         });
 
         it('contains a H4 with text Formatos disponíveis', function() {
-            expect(this.container.find('div.libby-fotoPopinCrop-cropColumnContainer > h4')).toHaveText('Formatos disponíveis');
+            expect(this.container.find('div.images-fotoPopinCrop-cropColumnContainer > h4')).toHaveText('Formatos disponíveis');
         });
 
         it('contains a div as container for crop sizes available', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-cropColumnContainer > div.libby-fotoPopinCrop-cropSizesContainer');
+            expect(this.container).toContain('div.images-fotoPopinCrop-cropColumnContainer > div.images-fotoPopinCrop-cropSizesContainer');
         });
 
         it('should have a reference for cropSizesContainer', function() {
@@ -67,7 +67,7 @@ describe('libby foto popin crop', function() {
         });
 
         it('contains a div as container for a preview of crop', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-cropColumnContainer > div.libby-fotoPopinCrop-cropMiniPreviewContainer');
+            expect(this.container).toContain('div.images-fotoPopinCrop-cropColumnContainer > div.images-fotoPopinCrop-cropMiniPreviewContainer');
         });
 
         it('should have a reference for cropMiniPreviewContainer', function() {
@@ -76,7 +76,7 @@ describe('libby foto popin crop', function() {
         });
 
         it('contains an h3', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCrop-cropSelectionContainer > h3');
+            expect(this.container).toContain('div.images-fotoPopinCrop-cropSelectionContainer > h3');
         });
 
         it('has a span inside H3', function() {

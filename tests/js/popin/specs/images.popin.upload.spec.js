@@ -1,4 +1,4 @@
-describe("libby foto popin upload", function(){
+describe("images foto popin upload", function(){
     beforeEach(function(){
         this.container = $('<div>');
         this.element = $('<div>');

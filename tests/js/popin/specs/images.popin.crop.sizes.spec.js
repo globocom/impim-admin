@@ -1,7 +1,7 @@
-describe('libby foto popin crop sizes', function() {
+describe('images foto popin crop sizes', function() {
 
     beforeEach(function() {
-        this.defaultOptions = $.libby.fotoPopinCropSizes.prototype.options;
+        this.defaultOptions = $.images.fotoPopinCropSizes.prototype.options;
         this.container = $('<div>');
     });
 
@@ -28,11 +28,11 @@ describe('libby foto popin crop sizes', function() {
         });
 
         it('creates a div called dimensions', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropSizes-container');
+            expect(this.container).toContain('div.images-fotoPopinCropSizes-container');
         });
 
         it('creates a div called width inside dimensions', function() {
-            expect(this.container.find('div.libby-fotoPopinCropSizes-container')).toContain('div.libby-fotoPopinCropSizes-container-width');
+            expect(this.container.find('div.images-fotoPopinCropSizes-container')).toContain('div.images-fotoPopinCropSizes-container-width');
         });
 
         it('has a widthContainer element', function() {
@@ -41,7 +41,7 @@ describe('libby foto popin crop sizes', function() {
         });
 
         it('creates a div called height inside dimensions', function() {
-            expect(this.container.find('div.libby-fotoPopinCropSizes-container')).toContain('div.libby-fotoPopinCropSizes-container-height');
+            expect(this.container.find('div.images-fotoPopinCropSizes-container')).toContain('div.images-fotoPopinCropSizes-container-height');
         });
 
         it('has a heightContainer element', function() {
@@ -50,19 +50,19 @@ describe('libby foto popin crop sizes', function() {
         });
 
         it('creates a label for width', function() {
-            expect(this.container.find('div.libby-fotoPopinCropSizes-container-width')).toContain('label');
+            expect(this.container.find('div.images-fotoPopinCropSizes-container-width')).toContain('label');
         });
 
         it('creates a field for width', function() {
-            expect(this.container.find('div.libby-fotoPopinCropSizes-container-width')).toContain('input.libby-fotoPopinCropSizes-container-width-field');
+            expect(this.container.find('div.images-fotoPopinCropSizes-container-width')).toContain('input.images-fotoPopinCropSizes-container-width-field');
         });
 
         it('creates a label for height', function() {
-            expect(this.container.find('div.libby-fotoPopinCropSizes-container-height')).toContain('label');
+            expect(this.container.find('div.images-fotoPopinCropSizes-container-height')).toContain('label');
         });
 
         it('creates a field for height', function() {
-            expect(this.container.find('div.libby-fotoPopinCropSizes-container-height')).toContain('input.libby-fotoPopinCropSizes-container-height-field');
+            expect(this.container.find('div.images-fotoPopinCropSizes-container-height')).toContain('input.images-fotoPopinCropSizes-container-height-field');
         });
 
         it('has a widthField element with the first array of the sizes option', function() {

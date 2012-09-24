@@ -1,6 +1,6 @@
 (function($){
 
-    $.widget('libby.fotoPopinCropSizeSelect', $.libby.widgetBase, {
+    $.widget('images.fotoPopinCropSizeSelect', $.libby.widgetBase, {
         options: {
             container: null,
             unsafeUrl: 'http://thumbor.globoi.com/unsafe',

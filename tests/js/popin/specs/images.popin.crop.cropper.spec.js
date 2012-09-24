@@ -1,4 +1,4 @@
-describe('libby foto popin crop cropper', function() {
+describe('images foto popin crop cropper', function() {
 
     beforeEach(function() {
         this.container = $('<div>');
@@ -20,18 +20,18 @@ describe('libby foto popin crop cropper', function() {
             this.container.fotoPopinCropCropper('destroy');
         });
         it('should have a container div', function() {
-            expect(this.container).toContain('div.libby-fotoPopinCropCropper-container');
+            expect(this.container).toContain('div.images-fotoPopinCropCropper-container');
         });
         it('should have a croppable div', function() {
-            expect(this.container.find('div.libby-fotoPopinCropCropper-container'))
-                                 .toContain('div.libby-fotoPopinCropCropper-container-croppable');
+            expect(this.container.find('div.images-fotoPopinCropCropper-container'))
+                                 .toContain('div.images-fotoPopinCropCropper-container-croppable');
         });
         it('should have a croppable div element', function() {
             expect(this.cropper.elements.croppableContainer).toBeTruthy();
         });
         it('should have a croppable img', function() {
-            expect(this.container.find('div.libby-fotoPopinCropCropper-container-croppable'))
-                                 .toContain('img.libby-fotoPopinCropCropper-container-croppable-image');
+            expect(this.container.find('div.images-fotoPopinCropCropper-container-croppable'))
+                                 .toContain('img.images-fotoPopinCropCropper-container-croppable-image');
         });
         it('should have a croppable image element', function() {
             expect(this.cropper.elements.croppableImage).toBeTruthy();
