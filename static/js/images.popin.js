@@ -223,7 +223,7 @@
         _selectImage: function() {
             $.ajax({
                 type: 'GET',
-                dataType: 'text',
+                dataType: 'jsonp',
                 context: this,
                 url: this.options.urls.generateUrl,
                 data: this._getImageData(),
