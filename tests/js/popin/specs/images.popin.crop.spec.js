@@ -88,7 +88,7 @@ describe('images foto popin crop', function() {
         });
 
         it('has an H3 with text Escolha um corte', function() {
-            expect(this.container.find('h3')).toHaveText('Escolha um corte ');
+            expect(this.container.find('h3')).toHaveText('Escolha um corte');
         });
 
         it('should have a reference for a span', function() {
