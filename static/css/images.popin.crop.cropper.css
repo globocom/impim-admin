@@ -16,18 +16,12 @@
 }
 
 .images-fotoPopinCropCropper-container {
+    left: 0;
+    margin-left: 0;
     /* esse container esta sendo posicionado fixed pq isso melhora muito a performance do cropper no firefox */
     position: fixed;
-    z-index: 1;
-    left: 50%;
-    top: 85px;
-    margin-left: -457px;
-}
-
-.positionFixedOnParentWith3DTransformBug .images-fotoPopinCropCropper-container {
-    left: 0;
     top: 0;
-    margin-left: 0;
+    z-index: 1;
 }
 
 .images-fotoPopinCropCropper-container-croppable {
