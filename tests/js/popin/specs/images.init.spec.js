@@ -60,4 +60,16 @@ describe('images init', function() {
         });
     });
     
+    describe('when fotoPopinImageApplied is fired and images-popin-target is any element', function() {
+        beforeEach(function() {
+            setFixtures('<div class="images-popin-target"></div>');
+            images.init();
+            $('.images-popin').trigger('fotoPopinImageApplied', {croppedUrl: 'http://example.com/croppedUrl'});
+        });
+        
+        it("should apply cropped url to img's src attribute", function() {
+            expect($('.images-popin-target')).toHaveAttr('data-images-popin-cropped-url', 'http://example.com/croppedUrl');
+        });
+    });
+    
 });

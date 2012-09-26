@@ -26,7 +26,8 @@
     _bindEvents = function() {
         $('.images-popin').unbind('fotoPopinImageApplied').bind('fotoPopinImageApplied', function(event, data) {
             $('img.images-popin-target').attr('src', data.croppedUrl);
-            $('input.images-popin-target').attr('value', data.croppedUrl);
+            $('input.images-popin-target').val(data.croppedUrl);
+            $('.images-popin-target').attr('data-images-popin-cropped-url', data.croppedUrl);
         });
         
         $('.images-popin-click-open').bind('click', function() {
