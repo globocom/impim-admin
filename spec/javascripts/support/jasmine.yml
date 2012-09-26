@@ -33,6 +33,7 @@ src_files:
     - static/js/images.popin.search.js
     - static/js/images.popin.crop.js
     - static/js/images.popin.js
+    - static/js/images.js
 
 # stylesheets
 #
