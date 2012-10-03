@@ -131,7 +131,7 @@ describe('images foto popin search filters', function() {
                     });
 
                     it("the correctly params should be passed", function(){
-                        expect(this.search._prepareParams()).toEqual({keyword: "", page: 2, pageSize: 18});
+                        expect(this.search._prepareParams()).toEqual({q: "", page: 2, pageSize: 18});
                     });
 
                     it("a new page have to be requested", function(){
@@ -157,7 +157,7 @@ describe('images foto popin search filters', function() {
                     });
 
                     it("the correct params should be passed", function(){
-                        expect(this.search._prepareParams()).toEqual({keyword:"fabio", page:1, pageSize: 18});
+                        expect(this.search._prepareParams()).toEqual({q:"fabio", page:1, pageSize: 18});
                     });
 
                     it("the search have to be executed", function(){
@@ -198,7 +198,7 @@ describe('images foto popin search filters', function() {
                         });
 
                         it("all fields should be used for search filter", function(){
-                            expect(this.search._prepareParams()).toEqual({keyword: "fabio",
+                            expect(this.search._prepareParams()).toEqual({q: "fabio",
                                                                           from: "11/11/2011",
                                                                           to: "12/12/2012",
                                                                           isevent: true,
@@ -268,7 +268,7 @@ describe('images foto popin search filters', function() {
                                 });
 
                                 it("the correctly params should be passed", function(){
-                                    expect(this.search._prepareParams()).toEqual({keyword:"fabio", page:1, pageSize: 18});
+                                    expect(this.search._prepareParams()).toEqual({q:"fabio", page:1, pageSize: 18});
                                 });
 
                                 it("the search have to be executed", function(){
@@ -301,7 +301,7 @@ describe('images foto popin search filters', function() {
             });
 
             it("have to contain a input field type text with name 'textoPesquisa'", function(){
-                expect(this.form).toContain('input[type="text"][name="keyword"]');
+                expect(this.form).toContain('input[type="text"][name="q"]');
             });
 
             it("have to contain a input field type text with name 'dataInicio'", function(){

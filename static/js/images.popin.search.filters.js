@@ -55,7 +55,7 @@
                         '<legend>Buscar midia</legend>',
                         '<ul>',
                             '<li class="', filterSearchClass, '">',
-                                '<input type="text" name="keyword" />',
+                                '<input type="text" name="q" />',
                             '</li>',
                             '<li class="', filtersDateClass, '">',
                                 '<button type="button" class="libby-button default">filtrar por data</button>',
@@ -188,7 +188,7 @@
                 return params;
             }
 
-            params.keyword = this.elements.inputKeyword.val();
+            params.q = this.elements.inputKeyword.val();
             if (this.elements.containerDateFilters.hasClass('active')) {
                 params.from = this.elements.inputDateFrom.val();
                 params.to = this.elements.inputDateTo.val();
