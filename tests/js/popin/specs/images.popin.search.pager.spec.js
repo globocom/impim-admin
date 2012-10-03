@@ -38,9 +38,9 @@ describe("images foto popin pager", function(){
 
             this.element.trigger('fotoPopinNewImages', [{
                 'start': 0,
-                'numFound': 20,
+                'total': 20,
                 'pageSize': 10,
-                'photos': [ { } ]
+                'items': [ { } ]
             }, false, 1]);
         });
 

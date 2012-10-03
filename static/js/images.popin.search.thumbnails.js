@@ -100,7 +100,7 @@
         _popinFotoNewImages: function(e, page) {
             this.elements.container.addClass('loaded');
 
-            if (!page.numFound) {
+            if (!page.total) {
                 this.elements.imageList.html('<p>Não há imagens cadastradas para esse filtro.</p>');
             } else {
                 this.elements.imageList.empty();
@@ -109,8 +109,8 @@
                     $(this).parent().addClass('loaded');
                 };
 
-                for (var index = 0; index < page.photos.length; index++) {
-                    var photo = page.photos[index];
+                for (var index = 0; index < page.items.length; index++) {
+                    var photo = page.items[index];
 
                     var html = this.buildPictureHtml(photo.dataCadastro, photo.largura, photo.altura, photo.titulo, photo.imagemAtual);
                     var li = $(html);

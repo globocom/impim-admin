@@ -48,7 +48,7 @@
 
         _updateInfo: function(e, info, isUserSearch) {
             this.elements.container.removeClass('hidden');
-            this.elements.infoNumImages.text(info.numFound);
+            this.elements.infoNumImages.text(info.total);
             this.elements.buttonReloadImages.text((isUserSearch) ? 'ver todas as imagens »' : 'recarregar imagens »');
         }
 

@@ -82,7 +82,7 @@
         },
 
         _onNewImages: function(ev, data, isUserSeach, page) {
-            this.maxPage = Math.ceil(data.numFound / data.pageSize);
+            this.maxPage = Math.ceil(data.total / data.pageSize);
             this._onNewPage(null, page);
         },
 

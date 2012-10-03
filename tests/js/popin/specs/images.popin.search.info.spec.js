@@ -35,8 +35,8 @@ describe('images foto popin search info', function() {
             var isUserSearch = false;
 
             this.container.trigger('fotoPopinNewImages', {
-                numFound: 1,
-                photos: [{
+                total: 1,
+                items: [{
                     dataCadastro: '10/10/2010 10:10:10',
                     largura: 300,
                     altura: 200,
@@ -68,8 +68,8 @@ describe('images foto popin search info', function() {
                 var isUserSearch = true;
 
                 this.container.trigger('fotoPopinNewImages', [{
-                    numFound: 2,
-                    photos: [{
+                    total: 2,
+                    items: [{
                         dataCadastro: '10/10/2010 10:10:10',
                         largura: 300,
                         altura: 200,

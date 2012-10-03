@@ -33,8 +33,8 @@ describe('images foto popin search thumbnails', function() {
         describe('on popinFotoNewImages when no image is found', function() {
             beforeEach(function() {
                 this.container.trigger('fotoPopinNewImages', [{
-                    numFound: 0,
-                    photos: []
+                    total: 0,
+                    items: []
                 }, false, 1]);
             });
 
@@ -49,8 +49,8 @@ describe('images foto popin search thumbnails', function() {
                 var isUserSearch = true;
                 this.thumbs = this.thumbnails.elements.imageList;
                 this.container.trigger('fotoPopinNewImages', [{
-                    numFound: 1,
-                    photos: [{
+                    total: 1,
+                    items: [{
                         dataCadastro: '10/10/2010 10:10:10',
                         largura: 300,
                         altura: 200,
