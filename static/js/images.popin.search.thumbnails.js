@@ -112,7 +112,7 @@
                 for (var index = 0; index < page.items.length; index++) {
                     var photo = page.items[index];
 
-                    var html = this.buildPictureHtml(photo.dataCadastro, photo.largura, photo.altura, photo.titulo, photo.imagemAtual);
+                    var html = this.buildPictureHtml(photo.createdDate, photo.width, photo.height, photo.title, photo.imagemAtual);
                     var li = $(html);
                     li.data('meta', photo).
                         find('img').
@@ -156,15 +156,15 @@
             var meta = (itemLi || this.elements.imageList.find('> li.selected')).data('meta');
             return meta ? {
                 id: meta.id,
-                date: meta.dataCadastro,
-                width: meta.largura,
-                height: meta.altura,
-                credits: meta.creditos,
+                date: meta.createdDate,
+                width: meta.width,
+                height: meta.height,
+                credits: meta.credits,
                 url: meta.url,
                 thumbUrl: meta.thumbUrl,
-                title: meta.titulo,
-                subject: meta.assunto,
-                eventDate: meta.dataEvento
+                title: meta.title,
+                subject: meta.subject,
+                eventDate: meta.eventDate
             } : null;
         },
 

@@ -51,15 +51,15 @@ describe('images foto popin search thumbnails', function() {
                 this.container.trigger('fotoPopinNewImages', [{
                     total: 1,
                     items: [{
-                        dataCadastro: '10/10/2010 10:10:10',
-                        largura: 300,
-                        altura: 200,
-                        creditos: 'credits',
+                        createdDate: '10/10/2010 10:10:10',
+                        width: 300,
+                        height: 200,
+                        credits: 'credits',
                         url: 'original.jpg',
                         thumbUrl: 'image_url.jpg',
-                        titulo: 'title',
-                        assunto: 'subject',
-                        dataEvento: '11/11/2011 11:11:11'
+                        title: 'title',
+                        subject: 'subject',
+                        eventDate: '11/11/2011 11:11:11'
                     }]
                 }, isUserSearch, 1]);
             });
