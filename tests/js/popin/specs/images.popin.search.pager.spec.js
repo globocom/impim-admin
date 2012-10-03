@@ -37,7 +37,6 @@ describe("images foto popin pager", function(){
             this.pager = this.element.data("fotoPopinSearchPager");
 
             this.element.trigger('fotoPopinNewImages', [{
-                'start': 0,
                 'total': 20,
                 'pageSize': 10,
                 'items': [ { } ]
