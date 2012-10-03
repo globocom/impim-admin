@@ -131,7 +131,7 @@ describe('images foto popin search filters', function() {
                     });
 
                     it("the correctly params should be passed", function(){
-                        expect(this.search._prepareParams()).toEqual({keyword: "", page: 2});
+                        expect(this.search._prepareParams()).toEqual({keyword: "", page: 2, pageSize: 18});
                     });
 
                     it("a new page have to be requested", function(){
@@ -156,8 +156,8 @@ describe('images foto popin search filters', function() {
                         this.server.restore();
                     });
 
-                    it("the correctly params should be passed", function(){
-                        expect(this.search._prepareParams()).toEqual({keyword:"fabio", page:1});
+                    it("the correct params should be passed", function(){
+                        expect(this.search._prepareParams()).toEqual({keyword:"fabio", page:1, pageSize: 18});
                     });
 
                     it("the search have to be executed", function(){
@@ -202,7 +202,8 @@ describe('images foto popin search filters', function() {
                                                                           from: "11/11/2011",
                                                                           to: "12/12/2012",
                                                                           isevent: true,
-                                                                          page: 1});
+                                                                          page: 1,
+                                                                          pageSize: 18});
                         });
 
                         it("the event fotoPopinNewImages should be executed", function(){
@@ -267,7 +268,7 @@ describe('images foto popin search filters', function() {
                                 });
 
                                 it("the correctly params should be passed", function(){
-                                    expect(this.search._prepareParams()).toEqual({keyword:"fabio", page:1});
+                                    expect(this.search._prepareParams()).toEqual({keyword:"fabio", page:1, pageSize: 18});
                                 });
 
                                 it("the search have to be executed", function(){

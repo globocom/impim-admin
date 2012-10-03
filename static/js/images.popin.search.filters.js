@@ -183,6 +183,7 @@
         _prepareParams: function() {
             var params = {};
             params.page = this.page;
+            params.pageSize = 18;
             if (!this.options.hasSearch) {
                 return params;
             }
