@@ -190,12 +190,18 @@
 
             params.q = this.elements.inputKeyword.val();
             if (this.elements.containerDateFilters.hasClass('active')) {
+                var dateFrom =
+                    $.datepicker.formatDate('yy-mm-dd', this.elements.inputDateFrom.datepicker('getDate'))
+                    + 'T00:00:00';
+                var dateTo =
+                    $.datepicker.formatDate('yy-mm-dd', this.elements.inputDateTo.datepicker('getDate'))
+                    + 'T23:59:59';
                 if (this.elements.radioUseEvent.is(':checked')) {
-                    params.eventDateFrom = this.elements.inputDateFrom.val();
-                    params.eventDateTo = this.elements.inputDateTo.val();
+                    params.eventDateFrom = dateFrom;
+                    params.eventDateTo = dateTo;
                 } else {
-                    params.createdDateFrom = this.elements.inputDateFrom.val();
-                    params.createdDateTo = this.elements.inputDateTo.val();
+                    params.createdDateFrom = dateFrom;
+                    params.createdDateTo = dateTo;
                 }
             }
             return params;

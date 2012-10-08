@@ -197,8 +197,8 @@ describe('images foto popin search filters', function() {
 
                         it("all fields should be used for search filter", function(){
                             expect(this.search._prepareParams()).toEqual({q: "fabio",
-                                                                          createdDateFrom: "11/11/2011",
-                                                                          createdDateTo: "12/12/2012",
+                                                                          createdDateFrom: "2011-11-11T00:00:00",
+                                                                          createdDateTo: "2012-12-12T23:59:59",
                                                                           page: 1,
                                                                           pageSize: 18});
                         });
@@ -228,8 +228,8 @@ describe('images foto popin search filters', function() {
 
                         it("all fields should be used for search filter", function(){
                             expect(this.search._prepareParams()).toEqual({q: "fabio",
-                                                                          eventDateFrom: "11/11/2011",
-                                                                          eventDateTo: "12/12/2012",
+                                                                          eventDateFrom: "2011-11-11T00:00:00",
+                                                                          eventDateTo: "2012-12-12T23:59:59",
                                                                           page: 1,
                                                                           pageSize: 18});
                         });
