@@ -190,9 +190,13 @@
 
             params.q = this.elements.inputKeyword.val();
             if (this.elements.containerDateFilters.hasClass('active')) {
-                params.from = this.elements.inputDateFrom.val();
-                params.to = this.elements.inputDateTo.val();
-                params.isevent = this.elements.radioUseEvent.is(':checked');
+                if (this.elements.radioUseEvent.is(':checked')) {
+                    params.eventDateFrom = this.elements.inputDateFrom.val();
+                    params.eventDateTo = this.elements.inputDateTo.val();
+                } else {
+                    params.createdDateFrom = this.elements.inputDateFrom.val();
+                    params.createdDateTo = this.elements.inputDateTo.val();
+                }
             }
             return params;
        },

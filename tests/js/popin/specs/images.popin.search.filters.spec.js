@@ -178,8 +178,37 @@ describe('images foto popin search filters', function() {
                     it("the button use date filters should not be visible", function(){
                         expect(this.search.elements.buttonUseDate.parent()).not.toHaveClass("hidden");
                     });
+                    
+                    describe('and fill all fields with created date', function() {
+                        beforeEach(function(){
+                            this.server = makeServerResponse('resultfordatefilters');
 
-                    describe("and fill all fields", function(){
+                            this.callback2 = jasmine.createSpy();
+                            this.container.unbind('fotoPopinNewImages').bind('fotoPopinNewImages', this.callback2);
+
+                            this.search.elements.inputKeyword.val("fabio");
+                            this.search.elements.inputDateFrom.val("11/11/2011");
+                            this.search.elements.inputDateTo.val("12/12/2012");
+
+                            this.search.elements.form.submit();
+
+                            this.server.respond();
+                        });
+
+                        it("all fields should be used for search filter", function(){
+                            expect(this.search._prepareParams()).toEqual({q: "fabio",
+                                                                          createdDateFrom: "11/11/2011",
+                                                                          createdDateTo: "12/12/2012",
+                                                                          page: 1,
+                                                                          pageSize: 18});
+                        });
+
+                        it("the event fotoPopinNewImages should be executed", function(){
+                            expect(this.callback2).toHaveBeenCalledWith(jasmine.any(Object), "resultfordatefilters", true, 1);
+                        });
+                    });
+
+                    describe("and fill all fields with event date", function(){
 
                         beforeEach(function(){
                             this.server = makeServerResponse('resultfordatefilters');
@@ -199,9 +228,8 @@ describe('images foto popin search filters', function() {
 
                         it("all fields should be used for search filter", function(){
                             expect(this.search._prepareParams()).toEqual({q: "fabio",
-                                                                          from: "11/11/2011",
-                                                                          to: "12/12/2012",
-                                                                          isevent: true,
+                                                                          eventDateFrom: "11/11/2011",
+                                                                          eventDateTo: "12/12/2012",
                                                                           page: 1,
                                                                           pageSize: 18});
                         });
