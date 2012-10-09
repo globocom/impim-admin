@@ -112,7 +112,10 @@
                 for (var index = 0; index < page.items.length; index++) {
                     var photo = page.items[index];
 
-                    var html = this.buildPictureHtml(photo.createdDate, photo.width, photo.height, photo.title, photo.imagemAtual);
+                    var html = this.buildPictureHtml(
+                        $.datepicker.formatDate('dd/mm/yy', new Date(Date.parse(photo.createdDate))),
+                        photo.width, photo.height, photo.title, photo.imagemAtual
+                    );
                     var li = $(html);
                     li.data('meta', photo).
                         find('img').

@@ -51,7 +51,7 @@ describe('images foto popin search thumbnails', function() {
                 this.container.trigger('fotoPopinNewImages', [{
                     total: 1,
                     items: [{
-                        createdDate: '10/10/2010 10:10:10',
+                        createdDate: '2010-10-10T10:10:10',
                         width: 300,
                         height: 200,
                         credits: 'credits',
@@ -59,7 +59,7 @@ describe('images foto popin search thumbnails', function() {
                         thumbUrl: 'image_url.jpg',
                         title: 'title',
                         subject: 'subject',
-                        eventDate: '11/11/2011 11:11:11'
+                        eventDate: '2011-11-11T11:11:11'
                     }]
                 }, isUserSearch, 1]);
             });
@@ -91,7 +91,7 @@ describe('images foto popin search thumbnails', function() {
                     .toHaveText('cadastrado em');
 
                 expect(li.find('strong'))
-                    .toHaveText('10/10/2010 10:10:10');
+                    .toHaveText('10/10/2010');
             });
 
             it('should have publish date and original size', function() {
@@ -135,7 +135,7 @@ describe('images foto popin search thumbnails', function() {
                 it('should return selected item', function() {
                     var selected = this.container.fotoPopinSearchThumbnails('getImageMetadata');
                     expect(selected).toEqual({
-                        date: '10/10/2010 10:10:10',
+                        date: '2010-10-10T10:10:10',
                         width: 300,
                         height: 200,
                         credits: 'credits',
@@ -143,7 +143,7 @@ describe('images foto popin search thumbnails', function() {
                         thumbUrl: 'image_url.jpg',
                         title: 'title',
                         subject: 'subject',
-                        eventDate: '11/11/2011 11:11:11'
+                        eventDate: '2011-11-11T11:11:11'
                     });
                 });
 
@@ -155,7 +155,7 @@ describe('images foto popin search thumbnails', function() {
                     });
                     it('should have executed the event with proper data', function() {
                         expect(this.fotoPopinImageSelectedHandler).toHaveBeenCalledWith(jasmine.any(Object), {
-                            date: '10/10/2010 10:10:10',
+                            date: '2010-10-10T10:10:10',
                             width: 300,
                             height: 200,
                             credits: 'credits',
@@ -163,7 +163,7 @@ describe('images foto popin search thumbnails', function() {
                             thumbUrl: 'image_url.jpg',
                             title: 'title',
                             subject: 'subject',
-                            eventDate: '11/11/2011 11:11:11'
+                            eventDate: '2011-11-11T11:11:11'
                         });
                     });
                 });
@@ -181,7 +181,7 @@ describe('images foto popin search thumbnails', function() {
                 });
                 it('should have executed the selected image handler with proper args', function() {
                     expect(this.fotoPopinImageSelectedHandler).toHaveBeenCalledWith(jasmine.any(Object), {
-                        date: '10/10/2010 10:10:10',
+                        date: '2010-10-10T10:10:10',
                         width: 300,
                         height: 200,
                         credits: 'credits',
@@ -189,7 +189,7 @@ describe('images foto popin search thumbnails', function() {
                         thumbUrl: 'image_url.jpg',
                         title: 'title',
                         subject: 'subject',
-                        eventDate: '11/11/2011 11:11:11'
+                        eventDate: '2011-11-11T11:11:11'
                     });
                 });
             });
