@@ -1,3 +1,6 @@
 language: ruby
 install: bundle
-script:  xvfb-run rake jasmine:ci
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+script: rake jasmine:ci
