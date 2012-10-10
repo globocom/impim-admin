@@ -1,2 +1,3 @@
+language: ruby
 install: bundle
 script:  xvfb-run rake jasmine:ci
