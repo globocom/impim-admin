@@ -18,7 +18,9 @@ Install ruby development dependencies:
 Running
 -------
 
-Open ```static/html/demo.html```
+Point your browser at:
+
+    static/html/demo.html
 
 Tests
 -----
