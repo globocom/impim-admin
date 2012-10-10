@@ -1,5 +1,5 @@
-Images Admin
-==========
+Images Admin [![Build Status](https://secure.travis-ci.org/globocom/images-admin.png)](http://travis-ci.org/globocom/images-admin)
+============
 
 Admin frontend for managing images.
 
