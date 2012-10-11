@@ -1,3 +1,6 @@
 language: ruby
 install: bundle
 script: bundle exec guard-jasmine -u http://localhost:3001/
+notifications:
+  email:
+    - lambda@corp.globo.com
