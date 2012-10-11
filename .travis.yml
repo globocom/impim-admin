@@ -1,6 +1,8 @@
 language: ruby
 install: bundle
 before_script:
+  - "firefox -v"
+  - "mozilla-firefox -v"
   - "bundle exec rake jasmine:ci JASMINE_PORT=8888"
   - "sleep 10"
 script: curl http://localhost:8888
