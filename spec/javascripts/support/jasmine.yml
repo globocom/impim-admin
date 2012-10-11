@@ -13,10 +13,11 @@
 src_files:
     - tests/js/assets/jquery/**/*.js
     - tests/js/assets/jquery-ui/**/*.js
-    - static/js/libby.widgetBase.js
-    - static/js/libby.objectRemap.js
+    - static/js/iso8601.min.js
     - static/js/jquery.form.js
     - static/js/jquery.Jcrop.js
+    - static/js/libby.widgetBase.js
+    - static/js/libby.objectRemap.js
     - static/js/images.popin.search.filters.js
     - static/js/images.popin.search.thumbnails.js
     - static/js/images.popin.search.info.js
