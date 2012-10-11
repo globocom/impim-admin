@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
-group :test do
-  gem 'jasmine'
+group :development, :test do
+  gem "jasmine"
+  gem "rake"
 end
