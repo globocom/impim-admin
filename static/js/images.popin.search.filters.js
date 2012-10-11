@@ -190,12 +190,11 @@
 
             params.q = this.elements.inputKeyword.val();
             if (this.elements.containerDateFilters.hasClass('active')) {
-                var dateFrom =
-                    $.datepicker.formatDate('yy-mm-dd', this.elements.inputDateFrom.datepicker('getDate'))
-                    + 'T00:00:00';
-                var dateTo =
-                    $.datepicker.formatDate('yy-mm-dd', this.elements.inputDateTo.datepicker('getDate'))
-                    + 'T23:59:59';
+                var dateFrom = $.datepicker.formatDate('yy-mm-dd', this.elements.inputDateFrom.datepicker('getDate'));
+                dateFrom = dateFrom ? dateFrom + 'T00:00:00' : undefined;
+                var dateTo = $.datepicker.formatDate('yy-mm-dd', this.elements.inputDateTo.datepicker('getDate'));
+                dateTo = dateTo ? dateTo + 'T23:59:59' : undefined;
+                
                 if (this.elements.radioUseEvent.is(':checked')) {
                     params.eventDateFrom = dateFrom;
                     params.eventDateTo = dateTo;

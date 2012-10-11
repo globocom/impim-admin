@@ -165,7 +165,7 @@ describe('images foto popin search filters', function() {
                     });
                 });
 
-                describe("when open date filter", function(){
+                describe("when opening date filter", function(){
 
                     beforeEach(function(){
                         this.search.elements.buttonUseDate.click();
@@ -177,6 +177,30 @@ describe('images foto popin search filters', function() {
 
                     it("the button use date filters should not be visible", function(){
                         expect(this.search.elements.buttonUseDate.parent()).not.toHaveClass("hidden");
+                    });
+                    
+                    describe('and leaving date fields blank', function() {
+                        beforeEach(function(){
+                            this.server = makeServerResponse('resultfordatefilters');
+
+                            this.callback2 = jasmine.createSpy();
+                            this.container.unbind('fotoPopinNewImages').bind('fotoPopinNewImages', this.callback2);
+
+                            this.search.elements.inputKeyword.val("fabio");
+                            this.search.elements.form.submit();
+
+                            this.server.respond();
+                        });
+                        
+                        it('should leave date search params undefined', function() {
+                            expect(this.search._prepareParams()).toEqual({q: "fabio",
+                                                                          createdDateFrom: undefined,
+                                                                          createdDateTo: undefined,
+                                                                          eventDateFrom: undefined,
+                                                                          eventDateTo: undefined,
+                                                                          page: 1,
+                                                                          pageSize: 18});
+                        });
                     });
                     
                     describe('and fill all fields with created date', function() {
