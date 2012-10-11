@@ -1,4 +1,6 @@
 language: ruby
 install: bundle
-before_script: bundle exec rake jasmine
+before_script:
+  - "bundle exec rake jasmine &"
+  - "sleep 10"
 script: curl http://localhost:8888
