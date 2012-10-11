@@ -1,3 +1,4 @@
 language: ruby
 install: bundle
-script: xvfb-run bundle exec rake jasmine:ci
+before_script: bundle exec rake jasmine
+script: curl http://localhost:8888
