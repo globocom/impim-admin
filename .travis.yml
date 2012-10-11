@@ -1,3 +1,7 @@
 language: ruby
 install: bundle
-script: xvfb-run bundle exec rake jasmine:ci JASMINE_PORT=8888
+script: "xvfb-run bundle exec rake jasmine:ci JASMINE_PORT=8888 &"
+after_script:
+  - "sleep 10"
+  - "curl http://localhost:7055"
+  - "curl http://localhost:8888"
