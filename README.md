@@ -1,12 +1,12 @@
-Images Admin [![Build Status](https://secure.travis-ci.org/globocom/images-admin.png)](http://travis-ci.org/globocom/images-admin)
-============
+Impim Admin [![Build Status](https://secure.travis-ci.org/globocom/impim-admin.png)](http://travis-ci.org/globocom/impim-admin)
+===========
 
 Admin frontend for managing images.
 
 Dependencies
 ------------
 
-- [Images API](https://github.com/globocom/images-api)
+- [Impim API](https://github.com/globocom/impim-api)
 
 Setup
 -----
