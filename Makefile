@@ -11,4 +11,4 @@ help:
 
 ci:
 	bundle
-	xvfb-run rake jasmine:ci
+	xvfb-run bundle exec rake jasmine:ci
