@@ -16,7 +16,7 @@
     _createPopin = function() {
         $('.images-popin').fotoPopin({
             urls: {
-                search: 'http://localhost:8080/alpha/search',
+                search: 'http://localhost:8080/alpha/images.js',
                 generateUrl: 'http://localhost:8080/thumbor_urls',
                 unsafeUrl: 'http://localhost:8888/unsafe'
             }
