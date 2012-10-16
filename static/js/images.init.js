@@ -1,5 +1,9 @@
 (function(window, $) {
     window.images = window.images || {};
+    window.impim = window.impim || {config: {
+        images_url: 'http://localhost:8080/alpha/images.js',
+        thumbor_urls_url: 'http://localhost:8080/thumbor_urls'
+    }};
     
     window.images.init = function() {
         _appendImagesPopin();
@@ -16,8 +20,8 @@
     _createPopin = function() {
         $('.images-popin').fotoPopin({
             urls: {
-                search: 'http://localhost:8080/alpha/images.js',
-                generateUrl: 'http://localhost:8080/thumbor_urls',
+                search: window.impim.config.images_url,
+                generateUrl: window.impim.config.thumbor_urls_url,
                 unsafeUrl: 'http://localhost:8888/unsafe'
             }
         });
