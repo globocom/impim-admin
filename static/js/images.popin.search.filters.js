@@ -183,7 +183,7 @@
         _prepareParams: function() {
             var params = {};
             params.page = this.page;
-            params.pageSize = 18;
+            params.page_size = 18;
             if (!this.options.hasSearch) {
                 return params;
             }
@@ -196,11 +196,11 @@
                 dateTo = dateTo ? dateTo + 'T23:59:59' : undefined;
                 
                 if (this.elements.radioUseEvent.is(':checked')) {
-                    params.eventDateFrom = dateFrom;
-                    params.eventDateTo = dateTo;
+                    params.event_date_from = dateFrom;
+                    params.event_date_to = dateTo;
                 } else {
-                    params.createdDateFrom = dateFrom;
-                    params.createdDateTo = dateTo;
+                    params.created_date_from = dateFrom;
+                    params.created_date_to = dateTo;
                 }
             }
             return params;
