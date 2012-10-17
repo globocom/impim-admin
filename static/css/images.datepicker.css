@@ -1,6 +1,7 @@
 #ui-datepicker-div {
     background-color: #F3F3F3;
     border: 1px solid #999;
+    display: none;
     font-family: arial,helvetica,freesans,sans-serif;
     font-size: 10px;
     z-index: 9991;
