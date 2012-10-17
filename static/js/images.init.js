@@ -1,9 +1,9 @@
 (function(window, $) {
     window.images = window.images || {};
     window.impim = window.impim || {config: {
-        images_url: 'http://localhost:8080/alpha/images.js',
-        thumbor_urls_url: 'http://localhost:8080/thumbor_urls',
-        thumbor_unsafe_url: 'http://localhost:8888/unsafe'
+        imagesUrl: 'http://localhost:8080/alpha/images.js',
+        thumborUrlsUrl: 'http://localhost:8080/thumbor_urls',
+        thumborUnsafeUrl: 'http://localhost:8888/unsafe'
     }};
     
     window.images.init = function() {
@@ -21,9 +21,9 @@
     _createPopin = function() {
         $('.images-popin').fotoPopin({
             urls: {
-                search: window.impim.config.images_url,
-                generateUrl: window.impim.config.thumbor_urls_url,
-                unsafeUrl: window.impim.config.thumbor_unsafe_url
+                search: window.impim.config.imagesUrl,
+                generateUrl: window.impim.config.thumborUrlsUrl,
+                unsafeUrl: window.impim.config.thumborUnsafeUrl
             }
         });
     };
