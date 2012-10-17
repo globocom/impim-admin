@@ -288,10 +288,10 @@
         _getImageData: function() {
             var data = {
                 image_url: this.imageData.originalUrl,
-                left: this.imageData.crop.left,
-                top: this.imageData.crop.top,
-                right: this.imageData.crop.right,
-                bottom: this.imageData.crop.bottom
+                crop_left: this.imageData.crop.left,
+                crop_top: this.imageData.crop.top,
+                crop_right: this.imageData.crop.right,
+                crop_bottom: this.imageData.crop.bottom
             };
 
             if (this.dimensions.width) {
