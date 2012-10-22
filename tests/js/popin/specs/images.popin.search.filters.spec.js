@@ -131,7 +131,7 @@ describe('images foto popin search filters', function() {
                     });
 
                     it("the correctly params should be passed", function(){
-                        expect(this.search._prepareParams()).toEqual({q: "", page: 2, page_size: 18});
+                        expect(this.search._prepareParams()).toEqual({q: "", page: 2, page_size: 18, thumb_sizes: '134x134'});
                     });
 
                     it("a new page have to be requested", function(){
@@ -157,7 +157,7 @@ describe('images foto popin search filters', function() {
                     });
 
                     it("the correct params should be passed", function(){
-                        expect(this.search._prepareParams()).toEqual({q:"fabio", page:1, page_size: 18});
+                        expect(this.search._prepareParams()).toEqual({q:"fabio", page:1, page_size: 18, thumb_sizes: '134x134'});
                     });
 
                     it("the search have to be executed", function(){
@@ -199,7 +199,8 @@ describe('images foto popin search filters', function() {
                                                                           event_date_from: undefined,
                                                                           event_date_to: undefined,
                                                                           page: 1,
-                                                                          page_size: 18});
+                                                                          page_size: 18,
+                                                                          thumb_sizes: '134x134'});
                         });
                     });
                     
@@ -224,7 +225,8 @@ describe('images foto popin search filters', function() {
                                                                           created_date_from: "2011-11-11T00:00:00",
                                                                           created_date_to: "2012-12-12T23:59:59",
                                                                           page: 1,
-                                                                          page_size: 18});
+                                                                          page_size: 18,
+                                                                          thumb_sizes: '134x134'});
                         });
 
                         it("the event fotoPopinNewImages should be executed", function(){
@@ -255,7 +257,8 @@ describe('images foto popin search filters', function() {
                                                                           event_date_from: "2011-11-11T00:00:00",
                                                                           event_date_to: "2012-12-12T23:59:59",
                                                                           page: 1,
-                                                                          page_size: 18});
+                                                                          page_size: 18,
+                                                                          thumb_sizes: '134x134'});
                         });
 
                         it("the event fotoPopinNewImages should be executed", function(){
@@ -320,7 +323,7 @@ describe('images foto popin search filters', function() {
                                 });
 
                                 it("the correctly params should be passed", function(){
-                                    expect(this.search._prepareParams()).toEqual({q:"fabio", page:1, page_size: 18});
+                                    expect(this.search._prepareParams()).toEqual({q:"fabio", page:1, page_size: 18, thumb_sizes: '134x134'});
                                 });
 
                                 it("the search have to be executed", function(){

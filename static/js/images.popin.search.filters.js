@@ -184,6 +184,7 @@
             var params = {};
             params.page = this.page;
             params.page_size = 18;
+            params.thumb_sizes = '134x134';
             if (!this.options.hasSearch) {
                 return params;
             }

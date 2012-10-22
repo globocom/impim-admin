@@ -120,7 +120,7 @@
                     li.data('meta', photo).
                         find('img').
                         load(hideLoadingImage).
-                        attr('src', photo.thumbUrl);
+                        attr('src', photo.thumbs['134x134']);
 
                     this.elements.imageList.append(li);
                 }
@@ -164,7 +164,7 @@
                 height: meta.height,
                 credits: meta.credits,
                 url: meta.url,
-                thumbUrl: meta.thumbUrl,
+                thumbUrl: meta.thumbs['134x134'],
                 title: meta.title,
                 subject: meta.subject,
                 eventDate: meta.eventDate

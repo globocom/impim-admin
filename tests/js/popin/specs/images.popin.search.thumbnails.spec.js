@@ -56,7 +56,7 @@ describe('images foto popin search thumbnails', function() {
                         height: 200,
                         credits: 'credits',
                         url: 'original.jpg',
-                        thumbUrl: 'image_url.jpg',
+                        thumbs: {'134x134': 'image_url.jpg'},
                         title: 'title',
                         subject: 'subject',
                         eventDate: '2011-11-11T11:11:11'
