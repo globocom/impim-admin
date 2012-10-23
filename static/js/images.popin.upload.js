@@ -41,7 +41,7 @@
             this.elements.container = $('<div class="' + containerClass + '"></div>');
 
             var html = [
-                '<form action="', this.options.uploadUrl, '" method="post">',
+                '<form action="', this.options.uploadUrl, '" method="post" enctype="multipart/form-data">',
                     '<h3>Cadastrar imagem</h3>',
                     '<fieldset>',
                         '<legend>Cadastrar imagem</legend>',
@@ -85,7 +85,8 @@
             this.element.trigger('fotoPopinUploadSendUpload');
 
             self.elements.form.ajaxSubmit({
-                beforeSubmit: function(){
+                dataType: 'json',
+                beforeSubmit: function(array, $form, options){
                     form.find('.error').removeClass('error');
                 },
                 complete: function(xhrObj){

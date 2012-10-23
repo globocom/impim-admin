@@ -22,6 +22,7 @@
         $('.images-popin').fotoPopin({
             urls: {
                 search: window.impim.config.imagesUrl + '.js',
+                upload: window.impim.config.imagesUrl,
                 generateUrl: window.impim.config.thumborUrlsUrl,
                 unsafeUrl: window.impim.config.thumborUnsafeUrl
             }
