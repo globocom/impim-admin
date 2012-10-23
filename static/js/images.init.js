@@ -1,7 +1,7 @@
 (function(window, $) {
     window.images = window.images || {};
     window.impim = window.impim || {config: {
-        imagesUrl: 'http://localhost:8080/alpha/images.js',
+        imagesUrl: 'http://localhost:8080/alpha/images',
         thumborUrlsUrl: 'http://localhost:8080/thumbor_urls',
         thumborUnsafeUrl: 'http://localhost:8888/unsafe'
     }};
@@ -21,7 +21,7 @@
     _createPopin = function() {
         $('.images-popin').fotoPopin({
             urls: {
-                search: window.impim.config.imagesUrl,
+                search: window.impim.config.imagesUrl + '.js',
                 generateUrl: window.impim.config.thumborUrlsUrl,
                 unsafeUrl: window.impim.config.thumborUnsafeUrl
             }
