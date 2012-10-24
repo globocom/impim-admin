@@ -56,7 +56,7 @@ describe("images foto popin upload", function(){
             var container = this.container;
             var callback = jasmine.createSpy();
             var xhr = {
-                responseText: '["image", "name", "credits"]'
+                responseText: '["image", "title", "credits"]'
             };
 
             this.element.bind('fotoPopinUploadErrorUpload', callback);
