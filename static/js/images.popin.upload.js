@@ -33,6 +33,7 @@
         _createElements: function(){
             var containerClass = this._classFor('container');
             var idEventDate = this._classFor('event-date');
+            var idEventDateIso = this._classFor('event-date-iso');
             var idAddTags = this._classFor('add-tags');
             var idCredits = this._classFor('credits');
             var idTitle = this._classFor('title');
@@ -66,7 +67,8 @@
                             '</li>',
                             '<li>',
                                 '<label for="', idEventDate, '">Data da imagem</label>',
-                                '<input class="', idEventDate, '" type="text" name="event_date" id="', idEventDate, '"/>',
+                                '<input class="', idEventDate, '" type="text" id="', idEventDate, '"/>',
+                                '<input class="', idEventDateIso, '" type="hidden" name="event_date" id="', idEventDateIso, '"/>',
                             '</li>',
                         '</ul>',
                     '</fieldset>',
@@ -74,6 +76,8 @@
             ];
 
             this.elements.container.html(html.join(''));
+            this.options.datepicker['altField'] = '#' + idEventDateIso;
+            this.options.datepicker['altFormat'] = 'yy-mm-dd';
             this.elements.container.find('.'+ idEventDate).datepicker(this.options.datepicker);
             this.elements.form = this.elements.container.find('form');
             this.options.container.append(this.elements.container);
@@ -112,7 +116,7 @@
                             subject: response.subject,
                             eventDate: response.eventDate
                         };
-                        form.get(0).reset();
+                        self._resetForm();
                         self.element.trigger('fotoPopinImageSelected', [data]);
                     }
                 }
@@ -122,6 +126,7 @@
         _resetForm: function() {
             this.elements.form.find('.error').removeClass('error');
             this.elements.form.get(0).reset();
+            this.elements.form.find('input[type=hidden]').val('');
         },
 
         close: function() {
