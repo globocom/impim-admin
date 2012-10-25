@@ -106,7 +106,7 @@ describe("images foto popin upload", function(){
                 responseText: dataStr
             };
 
-            var inputs = container.find('form input');
+            var inputs = container.find('form input[type="text"], form input[type="hidden"]');
             inputs.each(function(){
                 $(this).val('1');
             });
