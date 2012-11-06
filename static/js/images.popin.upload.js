@@ -105,15 +105,12 @@
                         });
                     } else {
                         var data = {
-                            id: response.id,
-                            date: response.created,
+                            createdDate: response.createdDate,
                             width: response.width,
                             height: response.height,
                             credits: response.credits,
                             url: response.url,
-                            thumbUrl: response.thumbUrl,
-                            title: response.subject,
-                            subject: response.subject,
+                            title: response.title,
                             eventDate: response.eventDate
                         };
                         self._resetForm();
