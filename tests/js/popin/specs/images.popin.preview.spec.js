@@ -99,7 +99,7 @@ describe('images foto popin preview', function() {
             });
 
             it('has an image with the specified_url', function() {
-                expect(this.container.find('img')).toHaveAttr('src', 'http://thumbor.globoi.com/unsafe/10x10:100x100/300x0/http://s.glbimg.com/somefoto.jpg');
+                expect(this.container.find('img')).toHaveAttr('src', 'http://thumbor.globoi.com/unsafe/10x10:100x100/300x0/s.glbimg.com/somefoto.jpg');
             });
 
             describe('has deactivate method that clears dom', function() {
@@ -147,7 +147,7 @@ describe('images foto popin preview', function() {
                     });
 
                     it('has an image with the specified_url', function() {
-                        expect(this.container.find('img')).toHaveAttr('src', 'http://thumbor.globoi.com/unsafe/10x10:100x100/300x0/http://s.glbimg.com/somefoto.jpg');
+                        expect(this.container.find('img')).toHaveAttr('src', 'http://thumbor.globoi.com/unsafe/10x10:100x100/300x0/s.glbimg.com/somefoto.jpg');
                     });
 
                 });
