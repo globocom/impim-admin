@@ -211,13 +211,13 @@
             this._insertImage(this.elements.croppableContainer);
 
             var data = {
-                image_url: this.original.url,
+                imageUrlProtocolRemoved: impim.url.removeProtocol(this.original.url),
                 width: Math.min(this.original.width, this.elements.croppableContainer.width()),
                 height: Math.min(this.original.height, this.elements.croppableContainer.height()),
                 fit_in: true
             };
 
-            this.activateCropper([this.options.unsafeUrl, 'fit-in', data.width + 'x' + data.height, data.image_url].join('/'));
+            this.activateCropper([this.options.unsafeUrl, 'fit-in', data.width + 'x' + data.height, data.imageUrlProtocolRemoved].join('/'));
         },
 
         close: function() {

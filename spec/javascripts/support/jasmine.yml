@@ -18,6 +18,7 @@ src_files:
     - static/js/jquery.Jcrop.js
     - static/js/libby.widgetBase.js
     - static/js/libby.objectRemap.js
+    - static/js/impim.url.js
     - static/js/images.popin.search.filters.js
     - static/js/images.popin.search.thumbnails.js
     - static/js/images.popin.search.info.js

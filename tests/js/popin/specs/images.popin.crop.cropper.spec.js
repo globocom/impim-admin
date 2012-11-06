@@ -128,7 +128,7 @@ describe('images foto popin crop cropper', function() {
                         expect(this.fotoPopinCropChanged).toHaveBeenCalled();
                     });
                     it('should change src of image to stored src', function() {
-                        expect(this.cropper.elements.croppableImage).toHaveAttr('src', 'http://thumbor.globoi.com/unsafe/fit-in/500x383/http://ego.globo.com/Gente/foto/0,,48146233-GDV,00.jpg');
+                        expect(this.cropper.elements.croppableImage).toHaveAttr('src', 'http://thumbor.globoi.com/unsafe/fit-in/500x383/ego.globo.com/Gente/foto/0,,48146233-GDV,00.jpg');
                     });
 
                     describe('and changing the size to have both proportions', function() {

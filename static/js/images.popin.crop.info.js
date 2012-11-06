@@ -88,7 +88,7 @@
                 urlParts.push(fixedSize.join(''));
             }
 
-            urlParts.push(imageData.originalUrl);
+            urlParts.push(impim.url.removeProtocol(imageData.originalUrl));
 
             url = this.options.unsafeUrl + urlParts.join('/');
 
