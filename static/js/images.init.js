@@ -2,7 +2,7 @@
     window.images = window.images || {};
     window.impim = window.impim || {};
     
-    window.impim.config = {
+    window.impim.config = window.impim.config || {
         imagesUrl: 'http://localhost:8080/alpha/images',
         thumborUrlsUrl: 'http://localhost:8080/thumbor_urls',
         thumborUnsafeUrl: 'http://localhost:8888/unsafe'
