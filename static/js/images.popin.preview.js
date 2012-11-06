@@ -58,7 +58,7 @@
                 this.imageData.crop.left + 'x' + this.imageData.crop.top + ':' +
                 this.imageData.crop.right + 'x' + this.imageData.crop.bottom,
                 this.imageData.width + 'x' + this.imageData.height,
-                this.imageData.originalUrl
+                impim.url.removeProtocol(this.imageData.originalUrl)
             ].join('/');
 
             this.elements.loadingImage.show();
