@@ -6,7 +6,17 @@ Admin frontend for managing images.
 Dependencies
 ------------
 
+API:
+
 - [Impim API](https://github.com/globocom/impim-api)
+
+Javascript:
+
+- jquery
+- jquery UI
+- iso8601
+- jquery.form
+- jquery.Jcrop
 
 Setup
 -----
@@ -15,12 +25,10 @@ Install ruby development dependencies:
 
     bundle
 
-Running
--------
+Using
+-----
 
-Point your browser at:
-
-    static/html/demo.html
+Add all javascript dependencies + dist/impim.js to your html.
 
 Tests
 -----

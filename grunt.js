@@ -15,15 +15,7 @@ module.exports = function(grunt) {
       files: ['grunt.js', 'static/js/**/*.js', 'tests/js/**/*.js']
     },
     concat: {
-      jquery_form: {
-        src: ['static/js/jquery.form.js'],
-        dest: 'dist/jquery.form.js'
-      },
-      jquery_jcrop: {
-        src: ['static/js/jquery.Jcrop.js'],
-        dest: 'dist/jquery.Jcrop.js'
-      },
-      impim: {
+      dist: {
         src: [
           '<banner:meta.banner>',
           '<file_strip_banner:static/js/libby.objectRemap.js>',
@@ -53,7 +45,7 @@ module.exports = function(grunt) {
     },
     min: {
       dist: {
-        src: ['<banner:meta.banner>', '<config:concat.impim.dest>'],
+        src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],
         dest: 'dist/impim-<%= meta.version %>.min.js'
       }
     },
