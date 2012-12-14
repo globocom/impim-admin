@@ -1,4 +1,4 @@
-(function($){
+define(['jquery', 'jqueryui'], function($) {
 
     var slice = Array.prototype.slice;
 
@@ -28,4 +28,4 @@
         deactivate: function(){}
     });
 
-})(jQuery);
+});

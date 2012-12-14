@@ -1,4 +1,4 @@
-(function($){
+define(['jquery', 'libby.objectRemap', 'libby.widgetBase'], function($) {
 
     var keys = {
         13: 'enter',
@@ -376,4 +376,4 @@
         }
     });
 
-})(jQuery);
+});
